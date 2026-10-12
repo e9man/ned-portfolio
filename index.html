@@ -37,7 +37,7 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 .ned-ico:hover{color:#7CF0C4 !important;border-color:#7CF0C4 !important}
 .ned-short{display:none}@container (max-width: 160px){.ned-long{display:none}.ned-short{display:inline}}
 .ned-navlinks{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.ned-navlinks::-webkit-scrollbar{display:none}.ned-navlinks a{white-space:nowrap;flex:none}
-.ned-more-row{display:none !important}#ned-team-more:checked~.ned-team-grid .ned-more-row{display:flex !important}.ned-show-less{display:none}#ned-team-more:checked~.ned-team-btn .ned-show-all{display:none}#ned-team-more:checked~.ned-team-btn .ned-show-less{display:inline}.ned-team-btn:hover{border-color:#7CF0C4;color:#7CF0C4}#ned-team-more:focus-visible~.ned-team-btn{outline:2px solid #7CF0C4;outline-offset:2px}
+.ned-more-row{display:none !important}#team:has(#ned-team-more:checked) .ned-more-row{display:flex !important}.ned-show-less{display:none}#ned-team-more:checked~.ned-show-all{display:none}#ned-team-more:checked~.ned-show-less{display:inline}.ned-team-btn:hover{border-color:#7CF0C4;color:#7CF0C4}.ned-team-btn:has(#ned-team-more:focus-visible){outline:2px solid #7CF0C4;outline-offset:2px}
 @media (max-width: 900px){.ned-navlinks{gap:18px !important;font-size:12px !important}}
 @media (max-width: 700px){.ned-navlinks{padding-right:24px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}.ned-navlinks a{padding:12px 0}}
 .ned-orbit{animation:nedSpin 9s linear infinite}
@@ -164,7 +164,6 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 <h2 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 68px); line-height: 0.95; text-transform: uppercase">Doctors, researchers and engineers.</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9D0CB">A global alliance of experts from leading medical centers and universities, working together to build the map that will guide the care of every person.</p>
 </div>
-<input type="checkbox" id="ned-team-more" class="ned-sr">
 <div class="ned-team-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); column-gap: 56px; border-top: 1px solid #1C2420">
 <div style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid #1C2420">
 <div style="width: 7px; height: 7px; border-radius: 50%; background: #7CF0C4; flex: none; margin-top: 9px"></div>
@@ -335,7 +334,7 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 <div style="display: flex; gap: 6px; flex: none; margin-top: 2px"><a class="ned-ico" href="https://il.linkedin.com/in/shay-liraz" target="_blank" rel="noopener" title="LinkedIn" aria-label="Shay Liraz on LinkedIn" style="width: 24px; height: 24px; border: 1px solid #33413A; display: flex; align-items: center; justify-content: center; color: #9AA59F; flex: none"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.120 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.92V23h-4.51v-7.11c0-1.7-.03-3.88-2.37-3.88-2.37 0-2.73 1.85-2.73 3.76V23H8.34V8.31z"></path></svg></a></div>
 </div>
 </div>
-<label for="ned-team-more" class="ned-team-btn" style="align-self: flex-start; cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; padding: 0 20px; border: 1px solid #4A5A53; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="ned-show-all">Show all</span><span class="ned-show-less">Show less</span></label>
+<label class="ned-team-btn" style="position: relative; align-self: flex-start; cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; padding: 0 20px; border: 1px solid #4A5A53; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><input type="checkbox" id="ned-team-more" class="ned-sr"><span class="ned-show-all">Show all</span><span class="ned-show-less">Show less</span></label>
 <a href="#join" style="align-self: flex-start; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #7CF0C4">Join the alliance →</a>
 </div>
 </section>
@@ -1791,7 +1790,6 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 <h2 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 68px); line-height: 0.95; text-transform: uppercase">Doctors, researchers and engineers.</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9D0CB">A global alliance of experts from leading medical centers and universities, working together to build the map that will guide the care of every person.</p>
 </div>
-<input type="checkbox" id="ned-team-more" class="ned-sr">
 <div class="ned-team-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); column-gap: 56px; border-top: 1px solid #1C2420">
 <div style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid #1C2420">
 <div style="width: 7px; height: 7px; border-radius: 50%; background: #7CF0C4; flex: none; margin-top: 9px"></div>
@@ -1962,7 +1960,7 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 <div style="display: flex; gap: 6px; flex: none; margin-top: 2px"><a class="ned-ico" href="https://il.linkedin.com/in/shay-liraz" target="_blank" rel="noopener" title="LinkedIn" aria-label="Shay Liraz on LinkedIn" style="width: 24px; height: 24px; border: 1px solid #33413A; display: flex; align-items: center; justify-content: center; color: #9AA59F; flex: none"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.120 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.92V23h-4.51v-7.11c0-1.7-.03-3.88-2.37-3.88-2.37 0-2.73 1.85-2.73 3.76V23H8.34V8.31z"></path></svg></a></div>
 </div>
 </div>
-<label for="ned-team-more" class="ned-team-btn" style="align-self: flex-start; cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; padding: 0 20px; border: 1px solid #4A5A53; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="ned-show-all">Show all</span><span class="ned-show-less">Show less</span></label>
+<label class="ned-team-btn" style="position: relative; align-self: flex-start; cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; padding: 0 20px; border: 1px solid #4A5A53; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><input type="checkbox" id="ned-team-more" class="ned-sr"><span class="ned-show-all">Show all</span><span class="ned-show-less">Show less</span></label>
 <a href="#join" style="align-self: flex-start; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #7CF0C4">Join the alliance →</a>
 </div>
 </section>
