@@ -24,10 +24,12 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 .ned-g,.ned-g .ned-k{color:#7CF0C4}
 .ned-r{display:inline-block;white-space:pre}
 .ned-rot{display:inline-grid;vertical-align:bottom;overflow:hidden}
-.ned-rot>span{grid-area:1/1;white-space:nowrap;opacity:0;animation:nedRot 6s cubic-bezier(.4,.14,.3,1) infinite}
+.ned-rot>span{grid-area:1/1;white-space:nowrap;opacity:0;animation:nedRot 10s cubic-bezier(.4,.14,.3,1) infinite}
 .ned-rot>span:nth-child(2){animation-delay:2s}
 .ned-rot>span:nth-child(3){animation-delay:4s}
-@keyframes nedRot{0%{opacity:0;transform:translateX(.35em)}6%,27%{opacity:1;transform:none}33%,100%{opacity:0;transform:translateX(-.35em)}}
+.ned-rot>span:nth-child(4){animation-delay:6s}
+.ned-rot>span:nth-child(5){animation-delay:8s}
+@keyframes nedRot{0%{opacity:0;transform:translateX(.35em)}3.6%,16.2%{opacity:1;transform:none}20%,100%{opacity:0;transform:translateX(-.35em)}}
 .ned-row{display:grid;grid-template-columns:minmax(0,0.75fr) repeat(3,minmax(0,1fr));gap:36px;padding:40px 0;border-top:1px solid #24302B;align-items:start}
 .ned-lab{display:none}
 @media (max-width: 760px){.ned-row4{grid-template-columns:none !important;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.ned-row4::-webkit-scrollbar{display:none}.ned-row4>*{scroll-snap-align:start}}
@@ -44,7 +46,7 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 @keyframes nedTravel{0%{offset-distance:0%;opacity:0}6%{opacity:1}80%{offset-distance:100%;opacity:1}92%,100%{offset-distance:100%;opacity:0}}
 @media (max-width: 900px){.ned-row{grid-template-columns:1fr;gap:18px}.ned-head{display:none}.ned-lab{display:block;margin-bottom:6px}}
 .ned-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-@media (prefers-reduced-motion: reduce){.ned-pulse path,.ned-spin,.ned-orbit,.ned-traveler,.ned-spin-slow,.ned-spin-fast{animation:none}.ned-traveler{display:none}.ned-rot>span{animation:none;opacity:0}.ned-rot>span:nth-child(3){opacity:1}}
+@media (prefers-reduced-motion: reduce){.ned-pulse path,.ned-spin,.ned-orbit,.ned-traveler,.ned-spin-slow,.ned-spin-fast{animation:none}.ned-traveler{display:none}.ned-rot>span{animation:none;opacity:0}.ned-rot>span:nth-child(5){opacity:1}}
 </style>
 
 </head>
@@ -85,7 +87,7 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 </svg>
 <div style="position: relative; width: 100%; box-sizing: border-box; max-width: 1360px; margin: 0 auto; padding: 120px 32px 112px; display: flex; flex-direction: column; gap: 32px">
 <h1 class="ned-h1 ned-morph" aria-label="A world with no evidence of disease. A world with NED." style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: min(136px, calc((100vw - 64px) / 8.6)); line-height: 0.92; letter-spacing: 0.01em; text-transform: uppercase; white-space: nowrap; position: relative"><span aria-hidden="true">A world with <span style="white-space: nowrap"><span class="ned-k">N</span><span class="ned-r">o</span></span><br><span style="white-space: nowrap"><span class="ned-k">E</span><span class="ned-r">vidence</span></span> <span class="ned-r">of</span> <span style="white-space: nowrap"><span class="ned-k">D</span><span class="ned-r">isease</span><span class="ned-k">.</span></span></span></h1>
-<p style="margin: 0; max-width: 920px; font-size: 20px; line-height: 1.55; color: #C9D0CB">A world where everyone can understand what is happening inside their body at any moment. Anything we can measure, we can&nbsp;<span class="ned-rot" aria-hidden="true"><span>track.</span><span>study.</span><span>fix.</span></span><span class="ned-sr">track, study, and fix.</span></p>
+<p style="margin: 0; max-width: 920px; font-size: 20px; line-height: 1.55; color: #C9D0CB">A world where everyone can understand what is happening inside their body at any moment. Anything we can measure, we can&nbsp;<span class="ned-rot" aria-hidden="true"><span>track.</span><span>study.</span><span>predict.</span><span>fix.</span><span>prevent.</span></span><span class="ned-sr">track, study, predict, fix, and prevent.</span></p>
 <div style="display: flex; gap: 16px; flex-wrap: wrap; padding-top: 8px">
 <a href="#portfolio" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #ECEEE9; color: #0A0C0B; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase">See the portfolio</a>
 <a href="#join" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #4A5A53; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase">Build with us</a>
@@ -1710,7 +1712,7 @@ a{color:#ECEEE9;text-decoration:none}a:hover{color:#7CF0C4}
 </svg>
 <div style="position: relative; width: 100%; box-sizing: border-box; max-width: 1360px; margin: 0 auto; padding: 120px 32px 112px; display: flex; flex-direction: column; gap: 32px">
 <h1 class="ned-h1 ned-morph" aria-label="A world with no evidence of disease. A world with NED." style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: min(136px, calc((100vw - 64px) / 8.6)); line-height: 0.92; letter-spacing: 0.01em; text-transform: uppercase; white-space: nowrap; position: relative"><span aria-hidden="true">A world with <span style="white-space: nowrap"><span class="ned-k">N</span><span class="ned-r">o</span></span><br><span style="white-space: nowrap"><span class="ned-k">E</span><span class="ned-r">vidence</span></span> <span class="ned-r">of</span> <span style="white-space: nowrap"><span class="ned-k">D</span><span class="ned-r">isease</span><span class="ned-k">.</span></span></span></h1>
-<p style="margin: 0; max-width: 920px; font-size: 20px; line-height: 1.55; color: #C9D0CB">A world where everyone can understand what is happening inside their body at any moment. Anything we can measure, we can&nbsp;<span class="ned-rot" aria-hidden="true"><span>track.</span><span>study.</span><span>fix.</span></span><span class="ned-sr">track, study, and fix.</span></p>
+<p style="margin: 0; max-width: 920px; font-size: 20px; line-height: 1.55; color: #C9D0CB">A world where everyone can understand what is happening inside their body at any moment. Anything we can measure, we can&nbsp;<span class="ned-rot" aria-hidden="true"><span>track.</span><span>study.</span><span>predict.</span><span>fix.</span><span>prevent.</span></span><span class="ned-sr">track, study, predict, fix, and prevent.</span></p>
 <div style="display: flex; gap: 16px; flex-wrap: wrap; padding-top: 8px">
 <a href="#portfolio" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #ECEEE9; color: #0A0C0B; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase">See the portfolio</a>
 <a href="#join" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #4A5A53; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase">Build with us</a>
