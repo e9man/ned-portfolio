@@ -16,7 +16,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 .ned-tab:hover{color:#EEF3F2}.ned-stat{display:inline-flex;align-items:center;gap:8px;background:transparent;border:0;border-bottom:1px solid transparent;padding:6px 0;margin:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer}.ned-stat:hover{color:#EEF3F2}.ned-stat[aria-pressed="true"]{color:#EEF3F2;border-bottom-color:#7CF0C4}.ned-stat:focus-visible{outline:2px solid #7CF0C4;outline-offset:2px}
 .ned-tab[aria-selected="true"]{color:#EEF3F2;border-bottom:2px solid #7CF0C4 !important}
 .ned-tab[aria-selected="true"] .ned-count{color:#7CF0C4}
-.ned-subtab{border:0 !important;border-bottom:1px solid transparent !important;color:#6F9197}.tl-short{display:none}@media (max-width: 640px){.tl-long{display:none}.tl-short{display:inline}[aria-label="Portfolio domains"] .ned-tab{padding:0 10px !important;letter-spacing:0.06em !important}}.ned-subtab[aria-pressed="true"]{border-bottom:1px solid #7CF0C4 !important;color:#EEF3F2}.ned-subtab[aria-pressed="false"] .ned-count{color:#4D7881}@media (max-width: 640px){[aria-label="Portfolio parts"]{justify-content:flex-start !important;gap:0 20px !important;margin-top:-22px !important}}
+.ned-subtab{border:0 !important;border-bottom:1px solid transparent !important;color:#6F9197}.tl-short{display:none}@media (max-width: 640px){.tl-long{display:none}.tl-short{display:inline}[aria-label="Portfolio domains"] .ned-tab{padding:0 8px !important;letter-spacing:0.06em !important}[aria-label="Portfolio domains"] .ned-count{display:none}}.ned-subtab[aria-pressed="true"]{border-bottom:1px solid #7CF0C4 !important;color:#EEF3F2}.ned-subtab[aria-pressed="false"] .ned-count{color:#4D7881}@media (max-width: 640px){[aria-label="Portfolio parts"]{justify-content:flex-start !important;gap:0 20px !important;margin-top:-22px !important}}
 .ned-pulse path{stroke-dasharray:6 4;animation:nedDash 6s linear infinite}
 @keyframes nedDash{to{stroke-dashoffset:-200}}
 .ned-spin{transform-origin:50% 50%;animation:nedSpin 24s linear infinite}
@@ -371,7 +371,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7CF0C4">The portfolio</div>
 <h2 class="ned-morph" aria-label="Building a world with no evidence of disease. Building a world with NED." style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase"><span aria-hidden="true">Building a world with <span style="white-space: nowrap"><span class="ned-k">N</span><span class="ned-r">o</span></span> <span style="white-space: nowrap"><span class="ned-k">E</span><span class="ned-r">vidence</span></span> <span class="ned-r">of</span> <span style="white-space: nowrap"><span class="ned-k">D</span><span class="ned-r">isease</span><span class="ned-k">.</span></span></span></h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To achieve the vision, NED Labs is building two systems: a living knowledge map of all possible routes, and a clinical navigation tool helping every person find the route to NED. Each unit in the portfolio is a component needed for one of these systems.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To achieve the vision, NED Labs is building two systems: Intelligence, a living knowledge map of all possible routes, and Operations, a clinical navigation tool helping every person find the route to NED. Each unit in the portfolio is a component needed for one of these systems.</p>
 </div>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #9DB6B9">
 <button type="button" class="ned-stat" aria-pressed="false"><span style="width: 10px; height: 10px; background: #7CF0C4"></span>Deployed · 7</button>
@@ -384,9 +384,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!---->
 <button type="button" class="ned-tab" role="tab" aria-selected="true" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">All</span><span class="tl-short">All</span> <span class="ned-count">35</span></button>
 
-<button type="button" class="ned-tab" role="tab" aria-selected="false" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">Knowledge map</span><span class="tl-short">Map</span> <span class="ned-count">10</span></button>
+<button type="button" class="ned-tab" role="tab" aria-selected="false" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">Intelligence</span><span class="tl-short">Intelligence</span> <span class="ned-count">10</span></button>
 
-<button type="button" class="ned-tab" role="tab" aria-selected="false" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">Clinical navigation</span><span class="tl-short">Navigation</span> <span class="ned-count">25</span></button>
+<button type="button" class="ned-tab" role="tab" aria-selected="false" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">Operations</span><span class="tl-short">Operations</span> <span class="ned-count">25</span></button>
 <!---->
 </div>
 <!----><!---->
@@ -432,7 +432,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Evidence</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Evidence</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Altneubio</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The atlas of a century of cancer research, built jointly by super intelligence and a multidisciplinary team of doctors, researchers and engineers.</p>
 </div>
@@ -475,7 +475,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Evidence</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Evidence</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Ground Truth</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Every measurement, decision and result from every person, kept as one empirical record and fed back into the map.</p>
 </div>
@@ -518,7 +518,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Evidence</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Evidence</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Intel Network</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Results from other hospitals, clinical trials and registries, brought into the map.</p>
 </div>
@@ -561,7 +561,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Theory</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Theory</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Expert Council</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Top clinicians, researchers and engineers, with Nobel laureates among them, who guide the map and the research.</p>
 </div>
@@ -604,7 +604,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Theory</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Theory</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Negentropy Driver</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The theory of the body as a control system: what each input does, and how the body repairs itself.</p>
 </div>
@@ -647,7 +647,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Frontier</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic Module System</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">New treatment modules, drawn from the atlas and ready to test.</p>
 </div>
@@ -690,7 +690,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Frontier</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Response System</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Develops and tests the treatments to use if cancer comes back, before it does.</p>
 </div>
@@ -733,7 +733,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Frontier</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Prevention System</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Develops and tests treatments that lower the chance that cancer comes back at all.</p>
 </div>
@@ -776,7 +776,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Frontier</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Measurement research</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Which signals matter, and new instruments to read them. Each new measurement adds a layer to the map.</p>
 </div>
@@ -819,7 +819,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Intelligence · Frontier</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">NED Grand Challenges</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Publish the hardest problems on the route to NED, each with a clear test and prize money. Any team in the world can compete. The first team to pass the test wins.</p>
 </div>
@@ -862,7 +862,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Nyquist</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">High-frequency measurement, from scans to body signals, each at its own sampling cadence, fast enough to see every change.</p>
 </div>
@@ -905,7 +905,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Sentinel</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Continuous monitoring through the days between visits to the measurement center, which make up most of a patient’s life.</p>
 </div>
@@ -948,7 +948,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Patient dashboard</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Each person sees where they are, their trend, and their route for the next 12 to 24 months.</p>
 </div>
@@ -991,7 +991,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Measurement platform</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The system that decides what to measure for each person, how often, and with which tools.</p>
 </div>
@@ -1034,7 +1034,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">360 baseline</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Every test needed for the first full picture, done in days.</p>
 </div>
@@ -1077,7 +1077,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recon</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A personal research lab for each person’s cancer, with cell lines, tissue cultures, mitochondrial studies and more, to learn how to target it.</p>
 </div>
@@ -1120,7 +1120,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Molecular Watch</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Blood tests that look for cancer at the molecular level after treatment, months before a scan can show it.</p>
 </div>
@@ -1163,7 +1163,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Early Warning</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Screening and surveillance for healthy people and people at high risk, built on what the evidence already proves.</p>
 </div>
@@ -1206,7 +1206,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Analyze</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">NED Operations Center</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">One headquarters that sees every patient and every decision.</p>
 </div>
@@ -1249,7 +1249,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Analyze</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">360 baseline orientation</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A full first picture of each person, to know where they stand.</p>
 </div>
@@ -1292,7 +1292,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Analyze</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic navigator</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Long-term decisions: which modules, and in which order.</p>
 </div>
@@ -1335,7 +1335,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Analyze</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic optimizer</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Short-term decisions inside each module: dose, timing, next step.</p>
 </div>
@@ -1378,7 +1378,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Analyze</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Safety tripwires</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Early warnings that stop or change a treatment before it does harm.</p>
 </div>
@@ -1421,7 +1421,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Analyze</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Red Team</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">An independent team that audits everything being done: the data, the decisions and the care.</p>
 </div>
@@ -1464,7 +1464,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">A-Team</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Special operations teams capable of running complex clinical trials and personalized programs.</p>
 </div>
@@ -1507,7 +1507,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Cure One</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A tailored n-of-1 treatment plan. Every available resource goes to one person, until NED.</p>
 </div>
@@ -1550,7 +1550,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic modules</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Treatments ready to run, alone or together.</p>
 </div>
@@ -1593,7 +1593,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Next Line</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The next treatment, ready before the current one stops working.</p>
 </div>
@@ -1636,7 +1636,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · IL</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The first center, inside a partner public hospital.</p>
 </div>
@@ -1679,7 +1679,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Arsenal</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Tested treatments on the shelf for each person, ready to launch the same week the first signs of return appear.</p>
 </div>
@@ -1722,7 +1722,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence prevention</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Ongoing care that keeps each person at NED.</p>
 </div>
@@ -1765,7 +1765,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Virtual clinics</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Expert care from anywhere, over video and shared data.</p>
 </div>
@@ -1808,7 +1808,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Concierge to the home</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Tests and care brought to the patient’s home.</p>
 </div>
@@ -1851,7 +1851,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Access and supply</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Partners, suppliers and research that keep lowering the cost per patient, to make the route to NED accessible to every person.</p>
 </div>
@@ -1894,7 +1894,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Operations · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · Worldwide</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Learning compounded across the globe, continuously improving care with every patient.</p>
 </div>
@@ -2236,7 +2236,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7CF0C4">The portfolio</div>
 <h2 class="ned-morph" aria-label="Building a world with no evidence of disease. Building a world with NED." style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase"><span aria-hidden="true">Building a world with <span style="white-space: nowrap"><span class="ned-k">N</span><span class="ned-r">o</span></span> <span style="white-space: nowrap"><span class="ned-k">E</span><span class="ned-r">vidence</span></span> <span class="ned-r">of</span> <span style="white-space: nowrap"><span class="ned-k">D</span><span class="ned-r">isease</span><span class="ned-k">.</span></span></span></h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To achieve the vision, NED Labs is building two systems: a living knowledge map of all possible routes, and a clinical navigation tool helping every person find the route to NED. Each unit in the portfolio is a component needed for one of these systems.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To achieve the vision, NED Labs is building two systems: Intelligence, a living knowledge map of all possible routes, and Operations, a clinical navigation tool helping every person find the route to NED. Each unit in the portfolio is a component needed for one of these systems.</p>
 </div>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #9DB6B9">
 <button type="button" class="ned-stat" aria-pressed="{{selLive}}" onClick="{{pickLive}}"><span style="width: 10px; height: 10px; background: #7CF0C4"></span>Deployed · {{countLive}}</button>
@@ -2489,8 +2489,8 @@ class Component extends DCLogic {
   renderVals() {
     const domains = [
       { id: 'all', label: 'All', short: 'All' },
-      { id: 'map', label: 'Knowledge map', short: 'Map', subs: ['evidence', 'theory', 'frontier'], blurb: 'All people, over years. What has been seen, why it works, and what is not known yet.' },
-      { id: 'nav', label: 'Clinical navigation', short: 'Navigation', subs: ['measure', 'decide', 'deliver'], blurb: 'One person, day by day. Measure where they are, analyze what it means, and improve their state.' }
+      { id: 'map', label: 'Intelligence', short: 'Intelligence', subs: ['evidence', 'theory', 'frontier'], blurb: 'All people, over years. What has been seen, why it works, and what is not known yet.' },
+      { id: 'nav', label: 'Operations', short: 'Operations', subs: ['measure', 'decide', 'deliver'], blurb: 'One person, day by day. Measure where they are, analyze what it means, and improve their state.' }
     ];
     const subs = {
       evidence: { label: 'Evidence', blurb: 'What has been seen: a century of research, results from other centers, and every patient result.' },
@@ -2565,7 +2565,7 @@ class Component extends DCLogic {
       }
     }));
     const items = P.filter((p) => okD(p) && okS(p)).map((p) => ({
-      code: p.code, name: p.name, line: p.line, domainLabel: (p.sub ? 'Knowledge map · ' : 'Clinical navigation · ') + labelOf[p.d],
+      code: p.code, name: p.name, line: p.line, domainLabel: (p.sub ? 'Intelligence · ' : 'Operations · ') + labelOf[p.d],
       isLive: p.s === 'live', isBuilding: p.s === 'building', isNext: p.s === 'next',
       v_grid: p.v === 'grid', v_pulse: p.v === 'pulse', v_people: p.v === 'people', v_loop: p.v === 'loop', v_open: p.v === 'open', v_rings: p.v === 'rings', v_bars: p.v === 'bars', v_modules: p.v === 'modules', v_ready: p.v === 'ready', v_shield: p.v === 'shield', v_radial: p.v === 'radial', v_navigator: p.v === 'navigator', v_optimizer: p.v === 'optimizer', v_tripwire: p.v === 'tripwire', v_hq: p.v === 'hq', v_signal: p.v === 'signal', v_stack: p.v === 'stack', v_nextline: p.v === 'nextline', v_standby: p.v === 'standby', v_video: p.v === 'video', v_home: p.v === 'home', v_map: p.v === 'map', v_world: p.v === 'world', v_focus: p.v === 'focus', mx: ({'D-05':268})[p.code] || 200, my: ({'D-05':126})[p.code] || 110
     }));
