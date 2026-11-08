@@ -16,6 +16,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 .ned-tab:hover{color:#EEF3F2}.ned-stat{display:inline-flex;align-items:center;gap:8px;background:transparent;border:0;border-bottom:1px solid transparent;padding:6px 0;margin:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer}.ned-stat:hover{color:#EEF3F2}.ned-stat[aria-pressed="true"]{color:#EEF3F2;border-bottom-color:#7CF0C4}.ned-stat:focus-visible{outline:2px solid #7CF0C4;outline-offset:2px}
 .ned-tab[aria-selected="true"]{color:#EEF3F2;border-bottom:2px solid #7CF0C4 !important}
 .ned-tab[aria-selected="true"] .ned-count{color:#7CF0C4}
+.ned-subtab{border:0 !important;border-bottom:1px solid transparent !important;color:#6F9197}.tl-short{display:none}@media (max-width: 640px){.tl-long{display:none}.tl-short{display:inline}[aria-label="Portfolio domains"] .ned-tab{padding:0 10px !important;letter-spacing:0.06em !important}}.ned-subtab[aria-pressed="true"]{border-bottom:1px solid #7CF0C4 !important;color:#EEF3F2}.ned-subtab[aria-pressed="false"] .ned-count{color:#4D7881}@media (max-width: 640px){[aria-label="Portfolio parts"]{justify-content:flex-start !important;gap:0 20px !important;margin-top:-22px !important}}
 .ned-pulse path{stroke-dasharray:6 4;animation:nedDash 6s linear infinite}
 @keyframes nedDash{to{stroke-dashoffset:-200}}
 .ned-spin{transform-origin:50% 50%;animation:nedSpin 24s linear infinite}
@@ -370,28 +371,25 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7CF0C4">The portfolio</div>
 <h2 class="ned-morph" aria-label="Building a world with no evidence of disease. Building a world with NED." style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase"><span aria-hidden="true">Building a world with <span style="white-space: nowrap"><span class="ned-k">N</span><span class="ned-r">o</span></span> <span style="white-space: nowrap"><span class="ned-k">E</span><span class="ned-r">vidence</span></span> <span class="ned-r">of</span> <span style="white-space: nowrap"><span class="ned-k">D</span><span class="ned-r">isease</span><span class="ned-k">.</span></span></span></h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To reach NED for every person, four things must exist: a living map of all possible routes, sensors that give each person’s coordinates on it, a system to recommend each person’s route, and the vehicle to travel it. Each unit in the portfolio is a component needed for one of these jobs.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To achieve the vision, NED Labs is building two systems: a living knowledge map of all possible routes, and a clinical navigation tool helping every person find the route to NED. Each unit in the portfolio is a component needed for one of these systems.</p>
 </div>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #9DB6B9">
-<button type="button" class="ned-stat" aria-pressed="false"><span style="width: 10px; height: 10px; background: #7CF0C4"></span>Deployed · 6</button>
-<button type="button" class="ned-stat" aria-pressed="false"><span style="width: 10px; height: 10px; background: #B8862B"></span>Building · 15</button>
-<button type="button" class="ned-stat" aria-pressed="false"><span style="width: 8px; height: 8px; border: 1px solid #8EA8AB"></span>Next · 13</button>
+<button type="button" class="ned-stat" aria-pressed="false"><span style="width: 10px; height: 10px; background: #7CF0C4"></span>Deployed · 7</button>
+<button type="button" class="ned-stat" aria-pressed="false"><span style="width: 10px; height: 10px; background: #B8862B"></span>Building · 17</button>
+<button type="button" class="ned-stat" aria-pressed="false"><span style="width: 8px; height: 8px; border: 1px solid #8EA8AB"></span>Next · 11</button>
 </div>
 </div>
 
 <div role="tablist" aria-label="Portfolio domains" style="display: flex; gap: 0; flex-wrap: wrap; border-bottom: 1px solid #264E57">
 <!---->
-<button type="button" class="ned-tab" role="tab" aria-selected="true" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">All <span class="ned-count">34</span></button>
+<button type="button" class="ned-tab" role="tab" aria-selected="true" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">All</span><span class="tl-short">All</span> <span class="ned-count">35</span></button>
 
-<button type="button" class="ned-tab" role="tab" aria-selected="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">Research <span class="ned-count">9</span></button>
+<button type="button" class="ned-tab" role="tab" aria-selected="false" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">Knowledge map</span><span class="tl-short">Map</span> <span class="ned-count">10</span></button>
 
-<button type="button" class="ned-tab" role="tab" aria-selected="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">Command &amp; Control <span class="ned-count">6</span></button>
-
-<button type="button" class="ned-tab" role="tab" aria-selected="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">Capabilities <span class="ned-count">14</span></button>
-
-<button type="button" class="ned-tab" role="tab" aria-selected="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">Centers <span class="ned-count">5</span></button>
+<button type="button" class="ned-tab" role="tab" aria-selected="false" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">Clinical navigation</span><span class="tl-short">Navigation</span> <span class="ned-count">25</span></button>
 <!---->
 </div>
+<!----><!---->
 
 <!----><!---->
 
@@ -424,8 +422,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-01</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">E-01</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
@@ -433,177 +432,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Evidence</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Altneubio</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The atlas of a century of cancer research, built jointly by super intelligence and a multidisciplinary team of doctors, researchers and engineers.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M50 180 H350" stroke="#2F5A63"></path><rect x="70" y="120" width="14" height="60" fill="#2F5A63" fill-opacity="1"></rect><rect x="100" y="70" width="14" height="110" fill="#2F5A63" fill-opacity="1"></rect><rect x="130" y="100" width="14" height="80" fill="#2F5A63" fill-opacity="1"></rect><rect x="160" y="40" width="14" height="140" fill="#7CF0C4" fill-opacity="0.9"></rect><rect x="190" y="85" width="14" height="95" fill="#2F5A63" fill-opacity="1"></rect><rect x="220" y="110" width="14" height="70" fill="#2F5A63" fill-opacity="1"></rect><rect x="250" y="55" width="14" height="125" fill="#2F5A63" fill-opacity="1"></rect><rect x="280" y="125" width="14" height="55" fill="#2F5A63" fill-opacity="1"></rect><rect x="310" y="80" width="14" height="100" fill="#2F5A63" fill-opacity="1"></rect><path d="M50 40 H350" stroke="#1D4048" stroke-dasharray="2 6"></path></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-02</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Measurement platform</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The system that decides what to measure for each person, how often, and with which tools.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><rect x="95" y="55" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="167" y="55" width="58" height="46" rx="4" fill="#7CF0C4" fill-opacity="0.15" stroke="#7CF0C4"></rect><rect x="239" y="55" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="95" y="117" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="167" y="117" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="239" y="117" width="58" height="46" rx="4" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="4 4"></rect><path d="M153 78 H167 M225 140 H239" stroke="#7CF0C4" stroke-opacity="0.5"></path></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-03</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic Module System</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">New treatment modules, drawn from the atlas and ready to test.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="70" fill="none" stroke="#2F5A63" stroke-dasharray="4 6"></circle><circle cx="200" cy="110" r="38" fill="none" stroke="#2F5A63"></circle><path d="M200 24 V70 M200 150 V196 M114 110 H160 M240 110 H286" stroke="#7CF0C4" stroke-opacity="0.7"></path><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-04</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Response System</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Develops and tests the treatments to use if cancer comes back, before it does.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M200 36 L268 60 V112 C268 152 236 178 200 190 C164 178 132 152 132 112 V60 Z" fill="#7CF0C4" fill-opacity="0.06" stroke="#7CF0C4" stroke-opacity="0.7"></path><circle cx="200" cy="112" r="6" fill="#7CF0C4"></circle><g fill="#2F5A63"><circle cx="90" cy="70" r="4"></circle><circle cx="320" cy="90" r="4"></circle><circle cx="96" cy="160" r="4"></circle><circle cx="312" cy="160" r="4"></circle></g><path d="M100 74 L124 86 M308 94 L280 104" stroke="#2F5A63" stroke-dasharray="3 4"></path></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-05</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Prevention System</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Develops and tests treatments that lower the chance that cancer comes back at all.</p>
 </div>
 </article>
 
@@ -634,8 +465,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-06</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">E-02</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
@@ -643,7 +475,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Evidence</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Ground Truth</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Every measurement, decision and result from every person, kept as one empirical record and fed back into the map.</p>
 </div>
@@ -676,8 +508,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-07</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">E-03</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -685,7 +518,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Evidence</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Intel Network</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Results from other hospitals, clinical trials and registries, brought into the map.</p>
 </div>
@@ -718,8 +551,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-08</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">T-01</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
 <!----><!---->
@@ -727,7 +561,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Theory</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Expert Council</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Top clinicians, researchers and engineers, with Nobel laureates among them, who guide the map and the research.</p>
 </div>
@@ -738,6 +572,221 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><g class="ned-spin" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="62" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="110 20"></circle><path d="M258 84 L265 100 L249 100 Z" fill="#7CF0C4"></path></g><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle><path d="M60 110 H120 M280 110 H340" stroke="#1D4048"></path></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">T-02</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Theory</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Negentropy Driver</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The theory of the body as a control system: what each input does, and how the body repairs itself.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><rect x="95" y="55" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="167" y="55" width="58" height="46" rx="4" fill="#7CF0C4" fill-opacity="0.15" stroke="#7CF0C4"></rect><rect x="239" y="55" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="95" y="117" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="167" y="117" width="58" height="46" rx="4" fill="none" stroke="#2F5A63"></rect><rect x="239" y="117" width="58" height="46" rx="4" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="4 4"></rect><path d="M153 78 H167 M225 140 H239" stroke="#7CF0C4" stroke-opacity="0.5"></path></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">F-01</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic Module System</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">New treatment modules, drawn from the atlas and ready to test.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="70" fill="none" stroke="#2F5A63" stroke-dasharray="4 6"></circle><circle cx="200" cy="110" r="38" fill="none" stroke="#2F5A63"></circle><path d="M200 24 V70 M200 150 V196 M114 110 H160 M240 110 H286" stroke="#7CF0C4" stroke-opacity="0.7"></path><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">F-02</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Response System</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Develops and tests the treatments to use if cancer comes back, before it does.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M200 36 L268 60 V112 C268 152 236 178 200 190 C164 178 132 152 132 112 V60 Z" fill="#7CF0C4" fill-opacity="0.06" stroke="#7CF0C4" stroke-opacity="0.7"></path><circle cx="200" cy="112" r="6" fill="#7CF0C4"></circle><g fill="#2F5A63"><circle cx="90" cy="70" r="4"></circle><circle cx="320" cy="90" r="4"></circle><circle cx="96" cy="160" r="4"></circle><circle cx="312" cy="160" r="4"></circle></g><path d="M100 74 L124 86 M308 94 L280 104" stroke="#2F5A63" stroke-dasharray="3 4"></path></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">F-03</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Prevention System</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Develops and tests treatments that lower the chance that cancer comes back at all.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M50 180 H350" stroke="#2F5A63"></path><rect x="70" y="120" width="14" height="60" fill="#2F5A63" fill-opacity="1"></rect><rect x="100" y="70" width="14" height="110" fill="#2F5A63" fill-opacity="1"></rect><rect x="130" y="100" width="14" height="80" fill="#2F5A63" fill-opacity="1"></rect><rect x="160" y="40" width="14" height="140" fill="#7CF0C4" fill-opacity="0.9"></rect><rect x="190" y="85" width="14" height="95" fill="#2F5A63" fill-opacity="1"></rect><rect x="220" y="110" width="14" height="70" fill="#2F5A63" fill-opacity="1"></rect><rect x="250" y="55" width="14" height="125" fill="#2F5A63" fill-opacity="1"></rect><rect x="280" y="125" width="14" height="55" fill="#2F5A63" fill-opacity="1"></rect><rect x="310" y="80" width="14" height="100" fill="#2F5A63" fill-opacity="1"></rect><path d="M50 40 H350" stroke="#1D4048" stroke-dasharray="2 6"></path></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">F-04</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Measurement research</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Which signals matter, and new instruments to read them. Each new measurement adds a layer to the map.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
 <!----><!---->
 <!----><!---->
 <!---->
@@ -760,8 +809,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">R-09</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">F-05</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -769,345 +819,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Research</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Knowledge map · Frontier</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">NED Grand Challenges</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Publish the hardest problems on the route to NED, each with a clear test and prize money. Any team in the world can compete. The first team to pass the test wins.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="56" fill="none" stroke="#264E57"></circle><line x1="200.0" y1="48.0" x2="200.0" y2="22.0" stroke="#2F5A63"></line><line x1="210.8" y1="48.9" x2="213.2" y2="35.2" stroke="#2F5A63"></line><line x1="221.2" y1="51.7" x2="226.0" y2="38.6" stroke="#2F5A63"></line><line x1="231.0" y1="56.3" x2="248.0" y2="26.9" stroke="#7CF0C4"></line><line x1="239.9" y1="62.5" x2="261.7" y2="36.5" stroke="#7CF0C4"></line><line x1="247.5" y1="70.1" x2="273.5" y2="48.3" stroke="#7CF0C4"></line><line x1="253.7" y1="79.0" x2="276.2" y2="66.0" stroke="#2F5A63"></line><line x1="258.3" y1="88.8" x2="271.4" y2="84.0" stroke="#2F5A63"></line><line x1="261.1" y1="99.2" x2="274.8" y2="96.8" stroke="#2F5A63"></line><line x1="262.0" y1="110.0" x2="288.0" y2="110.0" stroke="#2F5A63"></line><line x1="261.1" y1="120.8" x2="274.8" y2="123.2" stroke="#2F5A63"></line><line x1="258.3" y1="131.2" x2="271.4" y2="136.0" stroke="#2F5A63"></line><line x1="253.7" y1="141.0" x2="276.2" y2="154.0" stroke="#2F5A63"></line><line x1="247.5" y1="149.9" x2="258.2" y2="158.9" stroke="#2F5A63"></line><line x1="239.9" y1="157.5" x2="261.7" y2="183.5" stroke="#7CF0C4"></line><line x1="231.0" y1="163.7" x2="248.0" y2="193.1" stroke="#7CF0C4"></line><line x1="221.2" y1="168.3" x2="226.0" y2="181.4" stroke="#2F5A63"></line><line x1="210.8" y1="171.1" x2="213.2" y2="184.8" stroke="#2F5A63"></line><line x1="200.0" y1="172.0" x2="200.0" y2="198.0" stroke="#2F5A63"></line><line x1="189.2" y1="171.1" x2="186.8" y2="184.8" stroke="#2F5A63"></line><line x1="178.8" y1="168.3" x2="174.0" y2="181.4" stroke="#2F5A63"></line><line x1="169.0" y1="163.7" x2="156.0" y2="186.2" stroke="#2F5A63"></line><line x1="160.1" y1="157.5" x2="151.1" y2="168.2" stroke="#2F5A63"></line><line x1="152.5" y1="149.9" x2="141.8" y2="158.9" stroke="#2F5A63"></line><line x1="146.3" y1="141.0" x2="123.8" y2="154.0" stroke="#2F5A63"></line><line x1="141.7" y1="131.2" x2="128.6" y2="136.0" stroke="#2F5A63"></line><line x1="138.9" y1="120.8" x2="125.2" y2="123.2" stroke="#2F5A63"></line><line x1="138.0" y1="110.0" x2="104.0" y2="110.0" stroke="#7CF0C4"></line><line x1="138.9" y1="99.2" x2="125.2" y2="96.8" stroke="#2F5A63"></line><line x1="141.7" y1="88.8" x2="128.6" y2="84.0" stroke="#2F5A63"></line><line x1="146.3" y1="79.0" x2="123.8" y2="66.0" stroke="#2F5A63"></line><line x1="152.5" y1="70.1" x2="141.8" y2="61.1" stroke="#2F5A63"></line><line x1="160.1" y1="62.5" x2="151.1" y2="51.8" stroke="#2F5A63"></line><line x1="169.0" y1="56.3" x2="156.0" y2="33.8" stroke="#2F5A63"></line><line x1="178.8" y1="51.7" x2="174.0" y2="38.6" stroke="#2F5A63"></line><line x1="189.2" y1="48.9" x2="186.8" y2="35.2" stroke="#2F5A63"></line><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-01</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Command &amp; Control</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">360 baseline orientation</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A full first picture of each person, to know where they stand.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="82" fill="none" stroke="#264E57"></circle><g class="ned-spin-slow" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="82" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="150 30 60 30 120 125"></circle><path d="M-6,-5 L6,0 L-6,5 Z" fill="#7CF0C4" transform="translate(282,110) rotate(90)"></path></g><g fill="#0C262B" stroke="#7CF0C4"><circle cx="200" cy="28" r="6"></circle><circle cx="271" cy="151" r="6"></circle><circle cx="129" cy="151" r="6"></circle></g><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-02</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Command &amp; Control</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic navigator</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Long-term decisions: which modules, and in which order.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="82" fill="none" stroke="#264E57" stroke-dasharray="2 6"></circle><circle cx="200" cy="110" r="30" fill="none" stroke="#264E57"></circle><g class="ned-spin-fast" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="30" fill="none" stroke="#7CF0C4" stroke-opacity="0.85" stroke-dasharray="70 18"></circle><path d="M-5,-4 L5,0 L-5,4 Z" fill="#7CF0C4" transform="translate(230,110) rotate(90)"></path></g><circle cx="200" cy="110" r="4" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-03</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Command &amp; Control</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic optimizer</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Short-term decisions inside each module: dose, timing, next step.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 70 H360" stroke="#E8A25B" stroke-opacity="0.8" stroke-dasharray="6 5"></path><path d="M40 160 L110 150 L170 140 L210 112 L232 72" fill="none" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M232 72 L252 120 L320 150 L360 152" fill="none" stroke="#7CF0C4" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="4 4"></path><circle cx="232" cy="70" r="7" fill="none" stroke="#E8A25B"></circle><circle cx="232" cy="70" r="3" fill="#E8A25B"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-04</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Command &amp; Control</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Safety tripwires</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Early warnings that stop or change a treatment before it does harm.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><line x1="200" y1="110" x2="200" y2="32" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="190" y="24" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="310" y2="71" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="300" y="63" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="310" y2="149" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="300" y="141" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="200" y2="188" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="190" y="180" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="90" y2="149" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="80" y="141" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="90" y2="71" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="80" y="63" width="20" height="16" fill="none" stroke="#2F5A63"></rect><rect x="178" y="92" width="44" height="36" fill="#7CF0C4" fill-opacity="0.12" stroke="#7CF0C4"></rect></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-05</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
-<!----><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Command &amp; Control</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">NED Operations Center</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">One headquarters that sees every patient and every decision.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 70 H360" stroke="#E8A25B" stroke-opacity="0.8" stroke-dasharray="6 5"></path><path d="M40 160 L110 150 L170 140 L210 112 L232 72" fill="none" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M232 72 L252 120 L320 150 L360 152" fill="none" stroke="#7CF0C4" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="4 4"></path><circle cx="232" cy="70" r="7" fill="none" stroke="#E8A25B"></circle><circle cx="232" cy="70" r="3" fill="#E8A25B"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-06</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><!---->
-<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Command &amp; Control</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Red Team</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">An independent team that audits everything being done: the data, the decisions and the care.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><g fill="none" stroke="#2F5A63"><circle cx="200" cy="110" r="20"></circle><circle cx="120" cy="70" r="12"></circle><circle cx="280" cy="70" r="12"></circle><circle cx="120" cy="150" r="12"></circle><circle cx="280" cy="150" r="12"></circle><circle cx="200" cy="40" r="12"></circle><circle cx="200" cy="180" r="12"></circle></g><path d="M200 90 V52 M200 130 V168 M183 100 L131 76 M217 100 L269 76 M183 120 L131 144 M217 120 L269 144" stroke="#7CF0C4" stroke-opacity="0.6"></path><circle cx="200" cy="110" r="6" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-01</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
-<!----><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">A-Team</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Special operations teams capable of running complex clinical trials and personalized programs.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="88" fill="none" stroke="#264E57"></circle><circle cx="200" cy="110" r="60" fill="none" stroke="#2F5A63" stroke-dasharray="3 6"></circle><circle cx="200" cy="110" r="32" fill="none" stroke="#7CF0C4" stroke-opacity="0.7"></circle><g class="ned-spin" style="transform-origin: 200px 110px"><path d="M200 110 L200 22" stroke="#7CF0C4" stroke-opacity="0.5"></path></g><circle cx="200" cy="110" r="4" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-02</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
-<!----><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">360 baseline</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Every test needed for the first full picture, done in days.</p>
 </div>
 </article>
 
@@ -1138,8 +852,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-03</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-01</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
 <!----><!---->
@@ -1147,7 +862,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Nyquist</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">High-frequency measurement, from scans to body signals, each at its own sampling cadence, fast enough to see every change.</p>
 </div>
@@ -1180,8 +895,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-04</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-02</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
 <!----><!---->
@@ -1189,7 +905,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Sentinel</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Continuous monitoring through the days between visits to the measurement center, which make up most of a patient’s life.</p>
 </div>
@@ -1212,10 +928,11 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="150" r="6" fill="#7CF0C4"></circle><path d="M170 144.0 A30 30 0 0 1 230 144.0" fill="none" stroke="#7CF0C4" stroke-opacity="0.8"></path><path d="M140 138.0 A60 60 0 0 1 260 138.0" fill="none" stroke="#7CF0C4" stroke-opacity="0.6000000000000001"></path><path d="M110 132.0 A90 90 0 0 1 290 132.0" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></path><path d="M60 180 H340" stroke="#1D4048"></path></svg>
+<!---->
 <!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><rect x="80" y="48" width="240" height="28" rx="3" fill="none" stroke="#2F5A63"></rect><rect x="80" y="48" width="200" height="28" rx="3" fill="#7CF0C4" fill-opacity="0.15"></rect><rect x="80" y="92" width="240" height="28" rx="3" fill="none" stroke="#2F5A63"></rect><rect x="80" y="92" width="140" height="28" rx="3" fill="#7CF0C4" fill-opacity="0.25"></rect><rect x="80" y="136" width="240" height="28" rx="3" fill="none" stroke="#2F5A63"></rect><rect x="80" y="136" width="90" height="28" rx="3" fill="#7CF0C4" fill-opacity="0.35"></rect></svg>
-<!---->
+<!----><!---->
 <!----><!---->
 <!----><!---->
 <!----><!---->
@@ -1223,7 +940,50 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-05</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-03</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
+<!----><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Patient dashboard</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Each person sees where they are, their trend, and their route for the next 12 to 24 months.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M50 180 H350" stroke="#2F5A63"></path><rect x="70" y="120" width="14" height="60" fill="#2F5A63" fill-opacity="1"></rect><rect x="100" y="70" width="14" height="110" fill="#2F5A63" fill-opacity="1"></rect><rect x="130" y="100" width="14" height="80" fill="#2F5A63" fill-opacity="1"></rect><rect x="160" y="40" width="14" height="140" fill="#7CF0C4" fill-opacity="0.9"></rect><rect x="190" y="85" width="14" height="95" fill="#2F5A63" fill-opacity="1"></rect><rect x="220" y="110" width="14" height="70" fill="#2F5A63" fill-opacity="1"></rect><rect x="250" y="55" width="14" height="125" fill="#2F5A63" fill-opacity="1"></rect><rect x="280" y="125" width="14" height="55" fill="#2F5A63" fill-opacity="1"></rect><rect x="310" y="80" width="14" height="100" fill="#2F5A63" fill-opacity="1"></rect><path d="M50 40 H350" stroke="#1D4048" stroke-dasharray="2 6"></path></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-04</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
@@ -1231,9 +991,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic modules</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Treatments ready to run, alone or together.</p>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Measurement platform</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The system that decides what to measure for each person, how often, and with which tools.</p>
 </div>
 </article>
 
@@ -1244,28 +1004,29 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
 <!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 80 H300" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M296 72 L310 80 L296 88" fill="none" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M180 140 H340" stroke="#7CF0C4" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="6 6"></path><path d="M336 132 L350 140 L336 148" fill="none" stroke="#7CF0C4" stroke-opacity="0.6" stroke-width="1.5"></path><path d="M180 80 V140" stroke="#2F5A63" stroke-dasharray="3 4"></path><circle cx="180" cy="140" r="5" fill="#7CF0C4"></circle></svg>
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="88" fill="none" stroke="#264E57"></circle><circle cx="200" cy="110" r="60" fill="none" stroke="#2F5A63" stroke-dasharray="3 6"></circle><circle cx="200" cy="110" r="32" fill="none" stroke="#7CF0C4" stroke-opacity="0.7"></circle><g class="ned-spin" style="transform-origin: 200px 110px"><path d="M200 110 L200 22" stroke="#7CF0C4" stroke-opacity="0.5"></path></g><circle cx="200" cy="110" r="4" fill="#7CF0C4"></circle></svg>
 <!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
 <!----><!---->
 <!----><!---->
 <!----><!---->
 <!----><!---->
 <!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-06</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-05</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
@@ -1273,177 +1034,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Next Line</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The next treatment, ready before the current one stops working.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 130 H210" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M210 130 L230 130 L242 92 L256 160 L270 130 H360" fill="none" stroke="#2F5A63" stroke-dasharray="4 4"></path><rect x="236" y="50" width="96" height="30" rx="3" fill="none" stroke="#7CF0C4" stroke-opacity="0.7"></rect><path d="M248 62 H316 M248 70 H296" stroke="#7CF0C4" stroke-opacity="0.5"></path><circle cx="210" cy="130" r="5" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-07</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><!---->
-<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Arsenal</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Tested treatments on the shelf for each person, ready to launch the same week the first signs of return appear.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><g class="ned-spin" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="62" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="110 20"></circle><path d="M258 84 L265 100 L249 100 Z" fill="#7CF0C4"></path></g><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle><path d="M60 110 H120 M280 110 H340" stroke="#1D4048"></path></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-08</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><!---->
-<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence prevention</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Ongoing care that keeps each person at NED.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><rect x="110" y="40" width="180" height="120" rx="6" fill="none" stroke="#2F5A63"></rect><circle cx="200" cy="88" r="18" fill="none" stroke="#7CF0C4" stroke-opacity="0.8"></circle><path d="M168 140 C176 118 224 118 232 140" fill="none" stroke="#7CF0C4" stroke-opacity="0.8"></path><path d="M170 176 H230" stroke="#2F5A63"></path><circle cx="276" cy="54" r="4" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-09</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><!---->
-<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Virtual clinics</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Expert care from anywhere, over video and shared data.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M150 170 V105 L200 66 L250 105 V170 Z" fill="none" stroke="#2F5A63"></path><rect x="188" y="130" width="24" height="40" fill="none" stroke="#7CF0C4" stroke-opacity="0.7"></rect><path d="M40 170 H360" stroke="#1D4048"></path><path d="M60 170 C90 150 110 150 140 160" fill="none" stroke="#7CF0C4" stroke-dasharray="4 5"></path><circle cx="60" cy="170" r="5" fill="#7CF0C4"></circle></svg>
-<!---->
-<!----><!---->
-<!----><!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-10</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><!---->
-<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Concierge to the home</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Tests and care brought to the patient’s home.</p>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">360 baseline</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Every test needed for the first full picture, done in days.</p>
 </div>
 </article>
 
@@ -1474,8 +1067,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-11</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-06</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
@@ -1483,7 +1077,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recon</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A personal research lab for each person’s cancer, with cell lines, tissue cultures, mitochondrial studies and more, to learn how to target it.</p>
 </div>
@@ -1516,8 +1110,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-12</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-07</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -1525,7 +1120,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Molecular Watch</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Blood tests that look for cancer at the molecular level after treatment, months before a scan can show it.</p>
 </div>
@@ -1558,8 +1153,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-13</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">M-08</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -1567,9 +1163,310 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Measure</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Early Warning</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Screening and surveillance for healthy people and people at high risk, built on what the evidence already proves.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><line x1="200" y1="110" x2="200" y2="32" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="190" y="24" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="310" y2="71" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="300" y="63" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="310" y2="149" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="300" y="141" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="200" y2="188" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="190" y="180" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="90" y2="149" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="80" y="141" width="20" height="16" fill="none" stroke="#2F5A63"></rect><line x1="200" y1="110" x2="90" y2="71" stroke="#7CF0C4" stroke-opacity="0.45"></line><rect x="80" y="63" width="20" height="16" fill="none" stroke="#2F5A63"></rect><rect x="178" y="92" width="44" height="36" fill="#7CF0C4" fill-opacity="0.12" stroke="#7CF0C4"></rect></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">A-01</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
+<!----><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">NED Operations Center</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">One headquarters that sees every patient and every decision.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="56" fill="none" stroke="#264E57"></circle><line x1="200.0" y1="48.0" x2="200.0" y2="22.0" stroke="#2F5A63"></line><line x1="210.8" y1="48.9" x2="213.2" y2="35.2" stroke="#2F5A63"></line><line x1="221.2" y1="51.7" x2="226.0" y2="38.6" stroke="#2F5A63"></line><line x1="231.0" y1="56.3" x2="248.0" y2="26.9" stroke="#7CF0C4"></line><line x1="239.9" y1="62.5" x2="261.7" y2="36.5" stroke="#7CF0C4"></line><line x1="247.5" y1="70.1" x2="273.5" y2="48.3" stroke="#7CF0C4"></line><line x1="253.7" y1="79.0" x2="276.2" y2="66.0" stroke="#2F5A63"></line><line x1="258.3" y1="88.8" x2="271.4" y2="84.0" stroke="#2F5A63"></line><line x1="261.1" y1="99.2" x2="274.8" y2="96.8" stroke="#2F5A63"></line><line x1="262.0" y1="110.0" x2="288.0" y2="110.0" stroke="#2F5A63"></line><line x1="261.1" y1="120.8" x2="274.8" y2="123.2" stroke="#2F5A63"></line><line x1="258.3" y1="131.2" x2="271.4" y2="136.0" stroke="#2F5A63"></line><line x1="253.7" y1="141.0" x2="276.2" y2="154.0" stroke="#2F5A63"></line><line x1="247.5" y1="149.9" x2="258.2" y2="158.9" stroke="#2F5A63"></line><line x1="239.9" y1="157.5" x2="261.7" y2="183.5" stroke="#7CF0C4"></line><line x1="231.0" y1="163.7" x2="248.0" y2="193.1" stroke="#7CF0C4"></line><line x1="221.2" y1="168.3" x2="226.0" y2="181.4" stroke="#2F5A63"></line><line x1="210.8" y1="171.1" x2="213.2" y2="184.8" stroke="#2F5A63"></line><line x1="200.0" y1="172.0" x2="200.0" y2="198.0" stroke="#2F5A63"></line><line x1="189.2" y1="171.1" x2="186.8" y2="184.8" stroke="#2F5A63"></line><line x1="178.8" y1="168.3" x2="174.0" y2="181.4" stroke="#2F5A63"></line><line x1="169.0" y1="163.7" x2="156.0" y2="186.2" stroke="#2F5A63"></line><line x1="160.1" y1="157.5" x2="151.1" y2="168.2" stroke="#2F5A63"></line><line x1="152.5" y1="149.9" x2="141.8" y2="158.9" stroke="#2F5A63"></line><line x1="146.3" y1="141.0" x2="123.8" y2="154.0" stroke="#2F5A63"></line><line x1="141.7" y1="131.2" x2="128.6" y2="136.0" stroke="#2F5A63"></line><line x1="138.9" y1="120.8" x2="125.2" y2="123.2" stroke="#2F5A63"></line><line x1="138.0" y1="110.0" x2="104.0" y2="110.0" stroke="#7CF0C4"></line><line x1="138.9" y1="99.2" x2="125.2" y2="96.8" stroke="#2F5A63"></line><line x1="141.7" y1="88.8" x2="128.6" y2="84.0" stroke="#2F5A63"></line><line x1="146.3" y1="79.0" x2="123.8" y2="66.0" stroke="#2F5A63"></line><line x1="152.5" y1="70.1" x2="141.8" y2="61.1" stroke="#2F5A63"></line><line x1="160.1" y1="62.5" x2="151.1" y2="51.8" stroke="#2F5A63"></line><line x1="169.0" y1="56.3" x2="156.0" y2="33.8" stroke="#2F5A63"></line><line x1="178.8" y1="51.7" x2="174.0" y2="38.6" stroke="#2F5A63"></line><line x1="189.2" y1="48.9" x2="186.8" y2="35.2" stroke="#2F5A63"></line><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">A-02</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">360 baseline orientation</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A full first picture of each person, to know where they stand.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="82" fill="none" stroke="#264E57"></circle><g class="ned-spin-slow" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="82" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="150 30 60 30 120 125"></circle><path d="M-6,-5 L6,0 L-6,5 Z" fill="#7CF0C4" transform="translate(282,110) rotate(90)"></path></g><g fill="#0C262B" stroke="#7CF0C4"><circle cx="200" cy="28" r="6"></circle><circle cx="271" cy="151" r="6"></circle><circle cx="129" cy="151" r="6"></circle></g><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">A-03</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic navigator</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Long-term decisions: which modules, and in which order.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><circle cx="200" cy="110" r="82" fill="none" stroke="#264E57" stroke-dasharray="2 6"></circle><circle cx="200" cy="110" r="30" fill="none" stroke="#264E57"></circle><g class="ned-spin-fast" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="30" fill="none" stroke="#7CF0C4" stroke-opacity="0.85" stroke-dasharray="70 18"></circle><path d="M-5,-4 L5,0 L-5,4 Z" fill="#7CF0C4" transform="translate(230,110) rotate(90)"></path></g><circle cx="200" cy="110" r="4" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">A-04</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic optimizer</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Short-term decisions inside each module: dose, timing, next step.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 70 H360" stroke="#E8A25B" stroke-opacity="0.8" stroke-dasharray="6 5"></path><path d="M40 160 L110 150 L170 140 L210 112 L232 72" fill="none" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M232 72 L252 120 L320 150 L360 152" fill="none" stroke="#7CF0C4" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="4 4"></path><circle cx="232" cy="70" r="7" fill="none" stroke="#E8A25B"></circle><circle cx="232" cy="70" r="3" fill="#E8A25B"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">A-05</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Safety tripwires</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Early warnings that stop or change a treatment before it does harm.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 70 H360" stroke="#E8A25B" stroke-opacity="0.8" stroke-dasharray="6 5"></path><path d="M40 160 L110 150 L170 140 L210 112 L232 72" fill="none" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M232 72 L252 120 L320 150 L360 152" fill="none" stroke="#7CF0C4" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="4 4"></path><circle cx="232" cy="70" r="7" fill="none" stroke="#E8A25B"></circle><circle cx="232" cy="70" r="3" fill="#E8A25B"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">A-06</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><!---->
+<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Analyze</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Red Team</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">An independent team that audits everything being done: the data, the decisions and the care.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><g fill="none" stroke="#2F5A63"><circle cx="200" cy="110" r="20"></circle><circle cx="120" cy="70" r="12"></circle><circle cx="280" cy="70" r="12"></circle><circle cx="120" cy="150" r="12"></circle><circle cx="280" cy="150" r="12"></circle><circle cx="200" cy="40" r="12"></circle><circle cx="200" cy="180" r="12"></circle></g><path d="M200 90 V52 M200 130 V168 M183 100 L131 76 M217 100 L269 76 M183 120 L131 144 M217 120 L269 144" stroke="#7CF0C4" stroke-opacity="0.6"></path><circle cx="200" cy="110" r="6" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-01</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
+<!----><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">A-Team</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Special operations teams capable of running complex clinical trials and personalized programs.</p>
 </div>
 </article>
 
@@ -1600,8 +1497,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><line x1="367.5" y1="125.6" x2="225.6" y2="114.4" stroke="#7CF0C4" stroke-opacity="0.55"></line><line x1="347.6" y1="155.6" x2="222.6" y2="122.9" stroke="#2F5A63"></line><line x1="309.9" y1="180.2" x2="216.8" y2="129.8" stroke="#2F5A63"></line><line x1="258.9" y1="196.3" x2="209.0" y2="134.4" stroke="#2F5A63"></line><line x1="200.8" y1="202.0" x2="200.1" y2="136.0" stroke="#2F5A63"></line><line x1="142.6" y1="196.6" x2="191.2" y2="134.5" stroke="#2F5A63"></line><line x1="91.3" y1="180.7" x2="183.4" y2="130.0" stroke="#7CF0C4" stroke-opacity="0.55"></line><line x1="53.2" y1="156.4" x2="177.5" y2="123.1" stroke="#2F5A63"></line><line x1="32.7" y1="126.4" x2="174.4" y2="114.6" stroke="#2F5A63"></line><line x1="32.5" y1="94.4" x2="174.4" y2="105.6" stroke="#2F5A63"></line><line x1="52.4" y1="64.4" x2="177.4" y2="97.1" stroke="#2F5A63"></line><line x1="90.1" y1="39.8" x2="183.2" y2="90.2" stroke="#2F5A63"></line><line x1="141.1" y1="23.7" x2="191.0" y2="85.6" stroke="#7CF0C4" stroke-opacity="0.55"></line><line x1="199.2" y1="18.0" x2="199.9" y2="84.0" stroke="#2F5A63"></line><line x1="257.4" y1="23.4" x2="208.8" y2="85.5" stroke="#2F5A63"></line><line x1="308.7" y1="39.3" x2="216.6" y2="90.0" stroke="#2F5A63"></line><line x1="346.8" y1="63.6" x2="222.5" y2="96.9" stroke="#2F5A63"></line><line x1="367.3" y1="93.6" x2="225.6" y2="105.4" stroke="#2F5A63"></line><circle cx="367.5" cy="125.6" r="2.5" fill="#7CF0C4" fill-opacity="0.7"></circle><circle cx="347.6" cy="155.6" r="2.5" fill="#35626C"></circle><circle cx="309.9" cy="180.2" r="2.5" fill="#35626C"></circle><circle cx="258.9" cy="196.3" r="2.5" fill="#35626C"></circle><circle cx="200.8" cy="202.0" r="2.5" fill="#35626C"></circle><circle cx="142.6" cy="196.6" r="2.5" fill="#35626C"></circle><circle cx="91.3" cy="180.7" r="2.5" fill="#7CF0C4" fill-opacity="0.7"></circle><circle cx="53.2" cy="156.4" r="2.5" fill="#35626C"></circle><circle cx="32.7" cy="126.4" r="2.5" fill="#35626C"></circle><circle cx="32.5" cy="94.4" r="2.5" fill="#35626C"></circle><circle cx="52.4" cy="64.4" r="2.5" fill="#35626C"></circle><circle cx="90.1" cy="39.8" r="2.5" fill="#35626C"></circle><circle cx="141.1" cy="23.7" r="2.5" fill="#7CF0C4" fill-opacity="0.7"></circle><circle cx="199.2" cy="18.0" r="2.5" fill="#35626C"></circle><circle cx="257.4" cy="23.4" r="2.5" fill="#35626C"></circle><circle cx="308.7" cy="39.3" r="2.5" fill="#35626C"></circle><circle cx="346.8" cy="63.6" r="2.5" fill="#35626C"></circle><circle cx="367.3" cy="93.6" r="2.5" fill="#35626C"></circle><circle cx="200" cy="110" r="18" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle><circle cx="200" cy="110" r="7" fill="#7CF0C4"></circle></svg>
 <!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">C-14</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-02</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><span style="display: inline-block; padding: 4px 10px; background: #7CF0C4; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Deployed</span><!---->
 <!----><!---->
@@ -1609,7 +1507,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Capabilities</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Cure One</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">A tailored n-of-1 treatment plan. Every available resource goes to one person, until NED.</p>
 </div>
@@ -1617,6 +1515,93 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 
 <article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
 <div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><rect x="80" y="48" width="240" height="28" rx="3" fill="none" stroke="#2F5A63"></rect><rect x="80" y="48" width="200" height="28" rx="3" fill="#7CF0C4" fill-opacity="0.15"></rect><rect x="80" y="92" width="240" height="28" rx="3" fill="none" stroke="#2F5A63"></rect><rect x="80" y="92" width="140" height="28" rx="3" fill="#7CF0C4" fill-opacity="0.25"></rect><rect x="80" y="136" width="240" height="28" rx="3" fill="none" stroke="#2F5A63"></rect><rect x="80" y="136" width="90" height="28" rx="3" fill="#7CF0C4" fill-opacity="0.35"></rect></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-03</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Therapeutic modules</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Treatments ready to run, alone or together.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 80 H300" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M296 72 L310 80 L296 88" fill="none" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M180 140 H340" stroke="#7CF0C4" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="6 6"></path><path d="M336 132 L350 140 L336 148" fill="none" stroke="#7CF0C4" stroke-opacity="0.6" stroke-width="1.5"></path><path d="M180 80 V140" stroke="#2F5A63" stroke-dasharray="3 4"></path><circle cx="180" cy="140" r="5" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-04</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
+<!----><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Next Line</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The next treatment, ready before the current one stops working.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
 <!----><!---->
 <!----><!---->
 <!----><!---->
@@ -1643,7 +1628,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><g fill="none" stroke="#8EA8AB" stroke-opacity="0.8"><circle cx="236" cy="104" r="5"></circle><circle cx="96" cy="112" r="5"></circle><circle cx="186" cy="84" r="5"></circle><circle cx="268" cy="126" r="5"></circle></g><circle cx="268" cy="126" r="6" fill="#7CF0C4"></circle><circle cx="268" cy="126" r="16" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle></svg>
 <!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">L-01</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-05</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><span style="display: inline-block; padding: 4px 10px; background: #B8862B; color: #0C262B; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Building</span><!---->
@@ -1651,7 +1636,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Centers</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
 <h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · IL</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">The first center, inside a partner public hospital.</p>
 </div>
@@ -1677,15 +1662,16 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
 <!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><g fill="none" stroke="#8EA8AB" stroke-opacity="0.8"><circle cx="236" cy="104" r="5"></circle><circle cx="96" cy="112" r="5"></circle><circle cx="186" cy="84" r="5"></circle><circle cx="268" cy="126" r="5"></circle></g><circle cx="96" cy="112" r="6" fill="#7CF0C4"></circle><circle cx="96" cy="112" r="16" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle></svg>
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M40 130 H210" stroke="#7CF0C4" stroke-width="1.5"></path><path d="M210 130 L230 130 L242 92 L256 160 L270 130 H360" fill="none" stroke="#2F5A63" stroke-dasharray="4 4"></path><rect x="236" y="50" width="96" height="30" rx="3" fill="none" stroke="#7CF0C4" stroke-opacity="0.7"></rect><path d="M248 62 H316 M248 70 H296" stroke="#7CF0C4" stroke-opacity="0.5"></path><circle cx="210" cy="130" r="5" fill="#7CF0C4"></circle></svg>
 <!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">L-02</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-06</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -1693,9 +1679,95 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Centers</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · US</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">At a partner cancer center. Its many clinical trials give the map more results, faster.</p>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence Arsenal</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Tested treatments on the shelf for each person, ready to launch the same week the first signs of return appear.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><g class="ned-spin" style="transform-origin: 200px 110px"><circle cx="200" cy="110" r="62" fill="none" stroke="#7CF0C4" stroke-opacity="0.7" stroke-dasharray="110 20"></circle><path d="M258 84 L265 100 L249 100 Z" fill="#7CF0C4"></path></g><circle cx="200" cy="110" r="5" fill="#7CF0C4"></circle><path d="M60 110 H120 M280 110 H340" stroke="#1D4048"></path></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-07</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><!---->
+<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Recurrence prevention</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Ongoing care that keeps each person at NED.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><rect x="110" y="40" width="180" height="120" rx="6" fill="none" stroke="#2F5A63"></rect><circle cx="200" cy="88" r="18" fill="none" stroke="#7CF0C4" stroke-opacity="0.8"></circle><path d="M168 140 C176 118 224 118 232 140" fill="none" stroke="#7CF0C4" stroke-opacity="0.8"></path><path d="M170 176 H230" stroke="#2F5A63"></path><circle cx="276" cy="54" r="4" fill="#7CF0C4"></circle></svg>
+<!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-08</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><!---->
+<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Virtual clinics</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Expert care from anywhere, over video and shared data.</p>
 </div>
 </article>
 
@@ -1721,13 +1793,14 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M150 170 V105 L200 66 L250 105 V170 Z" fill="none" stroke="#2F5A63"></path><rect x="188" y="130" width="24" height="40" fill="none" stroke="#7CF0C4" stroke-opacity="0.7"></rect><path d="M40 170 H360" stroke="#1D4048"></path><path d="M60 170 C90 150 110 150 140 160" fill="none" stroke="#7CF0C4" stroke-dasharray="4 5"></path><circle cx="60" cy="170" r="5" fill="#7CF0C4"></circle></svg>
+<!---->
 <!----><!---->
 <!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><g fill="none" stroke="#8EA8AB" stroke-opacity="0.8"><circle cx="236" cy="104" r="5"></circle><circle cx="96" cy="112" r="5"></circle><circle cx="186" cy="84" r="5"></circle><circle cx="268" cy="126" r="5"></circle></g><circle cx="186" cy="84" r="6" fill="#7CF0C4"></circle><circle cx="186" cy="84" r="16" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle></svg>
-<!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">L-03</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-09</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -1735,51 +1808,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Centers</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · EU</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">At a partner research institute in Europe, to give access to the people of the continent.</p>
-</div>
-</article>
-
-<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
-<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!----><!---->
-<!---->
-<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><g fill="none" stroke="#8EA8AB" stroke-opacity="0.8"><circle cx="236" cy="104" r="5"></circle><circle cx="96" cy="112" r="5"></circle><circle cx="186" cy="84" r="5"></circle><circle cx="268" cy="126" r="5"></circle></g><circle cx="236" cy="104" r="6" fill="#7CF0C4"></circle><circle cx="236" cy="104" r="16" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle></svg>
-<!---->
-
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">L-04</div>
-<div style="position: absolute; top: 12px; right: 12px">
-<!----><!---->
-<!----><!---->
-<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Centers</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · Gulf</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">At a partner cancer center. Patients with different genes show if the map works for everyone.</p>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Concierge to the home</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Tests and care brought to the patient’s home.</p>
 </div>
 </article>
 
@@ -1810,8 +1841,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <!----><!---->
 <!----><!---->
 <!----><!---->
+<!----><!---->
 
-<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">L-05</div>
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-10</div>
 <div style="position: absolute; top: 12px; right: 12px">
 <!----><!---->
 <!----><!---->
@@ -1819,8 +1851,51 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Centers</div>
-<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · Next</h3>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Access and supply</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Partners, suppliers and research that keep lowering the cost per patient, to make the route to NED accessible to every person.</p>
+</div>
+</article>
+
+<article class="ned-card" style="display: flex; flex-direction: column; background: #113036; border: 1px solid #20454D">
+<div style="position: relative; height: 220px; background: #0E2A30; border-bottom: 1px solid #20454D; overflow: hidden">
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!----><!---->
+<!---->
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><line x1="96" y1="112" x2="186" y2="84" stroke="#2F5A63"></line><line x1="186" y1="84" x2="236" y2="104" stroke="#2F5A63"></line><line x1="236" y1="104" x2="268" y2="126" stroke="#2F5A63"></line><line x1="186" y1="84" x2="268" y2="126" stroke="#2F5A63"></line><line x1="96" y1="112" x2="236" y2="104" stroke="#2F5A63"></line><circle cx="268" cy="126" r="5" fill="#0C262B" stroke="#8EA8AB" stroke-opacity="0.8"></circle><circle cx="96" cy="112" r="6" fill="#7CF0C4"></circle><circle cx="96" cy="112" r="14" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></circle><circle cx="186" cy="84" r="6" fill="#7CF0C4"></circle><circle cx="186" cy="84" r="14" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></circle><circle cx="236" cy="104" r="6" fill="#7CF0C4"></circle><circle cx="236" cy="104" r="14" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></circle></svg>
+<!---->
+<!----><!---->
+
+<div style="position: absolute; top: 16px; left: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #9DB6B9">D-11</div>
+<div style="position: absolute; top: 12px; right: 12px">
+<!----><!---->
+<!----><!---->
+<!----><span style="display: inline-block; padding: 3px 9px; border: 1px solid #8EA8AB; color: #CFDDDE; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Next</span><!---->
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #7CF0C4">Clinical navigation · Deliver</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; text-transform: uppercase">Center for Cancer Measurement · Worldwide</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #CFDDDE">Learning compounded across the globe, continuously improving care with every patient.</p>
 </div>
 </article>
@@ -2161,7 +2236,7 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7CF0C4">The portfolio</div>
 <h2 class="ned-morph" aria-label="Building a world with no evidence of disease. Building a world with NED." style="margin: 0; font-family: 'Barlow Condensed', 'Avenir Next Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase"><span aria-hidden="true">Building a world with <span style="white-space: nowrap"><span class="ned-k">N</span><span class="ned-r">o</span></span> <span style="white-space: nowrap"><span class="ned-k">E</span><span class="ned-r">vidence</span></span> <span class="ned-r">of</span> <span style="white-space: nowrap"><span class="ned-k">D</span><span class="ned-r">isease</span><span class="ned-k">.</span></span></span></h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To reach NED for every person, four things must exist: a living map of all possible routes, sensors that give each person&#8217;s coordinates on it, a system to recommend each person&#8217;s route, and the vehicle to travel it. Each unit in the portfolio is a component needed for one of these jobs.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #CFDDDE">To achieve the vision, NED Labs is building two systems: a living knowledge map of all possible routes, and a clinical navigation tool helping every person find the route to NED. Each unit in the portfolio is a component needed for one of these systems.</p>
 </div>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #9DB6B9">
 <button type="button" class="ned-stat" aria-pressed="{{selLive}}" onClick="{{pickLive}}"><span style="width: 10px; height: 10px; background: #7CF0C4"></span>Deployed · {{countLive}}</button>
@@ -2172,9 +2247,16 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 
 <div role="tablist" aria-label="Portfolio domains" style="display: flex; gap: 0; flex-wrap: wrap; border-bottom: 1px solid #264E57">
 <sc-for list="{{tabs}}" as="tab" hint-placeholder-count="6">
-<button type="button" class="ned-tab" role="tab" aria-selected="{{tab.sel}}" onClick="{{tab.pick}}" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">{{tab.label}} <span class="ned-count">{{tab.count}}</span></button>
+<button type="button" class="ned-tab" role="tab" aria-selected="{{tab.sel}}" onClick="{{tab.pick}}" style="position: relative; min-height: 48px; padding: 0 20px; background: transparent; border: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase"><span class="tl-long">{{tab.label}}</span><span class="tl-short">{{tab.short}}</span> <span class="ned-count">{{tab.count}}</span></button>
 </sc-for>
 </div>
+<sc-if value="{{showSub}}" hint-placeholder-val="{{false}}">
+<div role="group" aria-label="Portfolio parts" style="display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0 28px; margin-top: -30px">
+<sc-for list="{{subtabs}}" as="st" hint-placeholder-count="4">
+<button type="button" class="ned-tab ned-subtab" aria-pressed="{{st.sel}}" onClick="{{st.pick}}" style="min-height: 34px; padding: 0; background: transparent; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">{{st.label}} <span class="ned-count">{{st.count}}</span></button>
+</sc-for>
+</div>
+</sc-if>
 
 <sc-if value="{{showBlurb}}" hint-placeholder-val="{{false}}">
 <p style="margin: 0; max-width: 760px; font-size: 17px; line-height: 1.6; color: #CFDDDE">{{domainBlurb}}</p>
@@ -2249,6 +2331,9 @@ a{color:#EEF3F2;text-decoration:none}a:hover{color:#7CF0C4}
 </sc-if>
 <sc-if value="{{item.v_focus}}" hint-placeholder-val="{{false}}">
 <svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><line x1="367.5" y1="125.6" x2="225.6" y2="114.4" stroke="#7CF0C4" stroke-opacity="0.55"></line><line x1="347.6" y1="155.6" x2="222.6" y2="122.9" stroke="#2F5A63"></line><line x1="309.9" y1="180.2" x2="216.8" y2="129.8" stroke="#2F5A63"></line><line x1="258.9" y1="196.3" x2="209.0" y2="134.4" stroke="#2F5A63"></line><line x1="200.8" y1="202.0" x2="200.1" y2="136.0" stroke="#2F5A63"></line><line x1="142.6" y1="196.6" x2="191.2" y2="134.5" stroke="#2F5A63"></line><line x1="91.3" y1="180.7" x2="183.4" y2="130.0" stroke="#7CF0C4" stroke-opacity="0.55"></line><line x1="53.2" y1="156.4" x2="177.5" y2="123.1" stroke="#2F5A63"></line><line x1="32.7" y1="126.4" x2="174.4" y2="114.6" stroke="#2F5A63"></line><line x1="32.5" y1="94.4" x2="174.4" y2="105.6" stroke="#2F5A63"></line><line x1="52.4" y1="64.4" x2="177.4" y2="97.1" stroke="#2F5A63"></line><line x1="90.1" y1="39.8" x2="183.2" y2="90.2" stroke="#2F5A63"></line><line x1="141.1" y1="23.7" x2="191.0" y2="85.6" stroke="#7CF0C4" stroke-opacity="0.55"></line><line x1="199.2" y1="18.0" x2="199.9" y2="84.0" stroke="#2F5A63"></line><line x1="257.4" y1="23.4" x2="208.8" y2="85.5" stroke="#2F5A63"></line><line x1="308.7" y1="39.3" x2="216.6" y2="90.0" stroke="#2F5A63"></line><line x1="346.8" y1="63.6" x2="222.5" y2="96.9" stroke="#2F5A63"></line><line x1="367.3" y1="93.6" x2="225.6" y2="105.4" stroke="#2F5A63"></line><circle cx="367.5" cy="125.6" r="2.5" fill="#7CF0C4" fill-opacity="0.7"></circle><circle cx="347.6" cy="155.6" r="2.5" fill="#35626C"></circle><circle cx="309.9" cy="180.2" r="2.5" fill="#35626C"></circle><circle cx="258.9" cy="196.3" r="2.5" fill="#35626C"></circle><circle cx="200.8" cy="202.0" r="2.5" fill="#35626C"></circle><circle cx="142.6" cy="196.6" r="2.5" fill="#35626C"></circle><circle cx="91.3" cy="180.7" r="2.5" fill="#7CF0C4" fill-opacity="0.7"></circle><circle cx="53.2" cy="156.4" r="2.5" fill="#35626C"></circle><circle cx="32.7" cy="126.4" r="2.5" fill="#35626C"></circle><circle cx="32.5" cy="94.4" r="2.5" fill="#35626C"></circle><circle cx="52.4" cy="64.4" r="2.5" fill="#35626C"></circle><circle cx="90.1" cy="39.8" r="2.5" fill="#35626C"></circle><circle cx="141.1" cy="23.7" r="2.5" fill="#7CF0C4" fill-opacity="0.7"></circle><circle cx="199.2" cy="18.0" r="2.5" fill="#35626C"></circle><circle cx="257.4" cy="23.4" r="2.5" fill="#35626C"></circle><circle cx="308.7" cy="39.3" r="2.5" fill="#35626C"></circle><circle cx="346.8" cy="63.6" r="2.5" fill="#35626C"></circle><circle cx="367.3" cy="93.6" r="2.5" fill="#35626C"></circle><circle cx="200" cy="110" r="18" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle><circle cx="200" cy="110" r="7" fill="#7CF0C4"></circle></svg>
+</sc-if>
+<sc-if value="{{item.v_world}}" hint-placeholder-val="{{false}}">
+<svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><line x1="96" y1="112" x2="186" y2="84" stroke="#2F5A63"></line><line x1="186" y1="84" x2="236" y2="104" stroke="#2F5A63"></line><line x1="236" y1="104" x2="268" y2="126" stroke="#2F5A63"></line><line x1="186" y1="84" x2="268" y2="126" stroke="#2F5A63"></line><line x1="96" y1="112" x2="236" y2="104" stroke="#2F5A63"></line><circle cx="268" cy="126" r="5" fill="#0C262B" stroke="#8EA8AB" stroke-opacity="0.8"></circle><circle cx="96" cy="112" r="6" fill="#7CF0C4"></circle><circle cx="96" cy="112" r="14" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></circle><circle cx="186" cy="84" r="6" fill="#7CF0C4"></circle><circle cx="186" cy="84" r="14" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></circle><circle cx="236" cy="104" r="6" fill="#7CF0C4"></circle><circle cx="236" cy="104" r="14" fill="none" stroke="#7CF0C4" stroke-opacity="0.4"></circle></svg>
 </sc-if>
 <sc-if value="{{item.v_map}}" hint-placeholder-val="{{false}}">
 <svg aria-hidden="true" viewBox="0 0 400 220" style="width: 100%; height: 100%"><path d="M0 70 H400 M0 110 H400 M0 150 H400 M80 0 V220 M160 0 V220 M240 0 V220 M320 0 V220" stroke="#16383F"></path><g fill="none" stroke="#8EA8AB" stroke-opacity="0.8"><circle cx="236" cy="104" r="5"></circle><circle cx="96" cy="112" r="5"></circle><circle cx="186" cy="84" r="5"></circle><circle cx="268" cy="126" r="5"></circle></g><circle cx="{{item.mx}}" cy="{{item.my}}" r="6" fill="#7CF0C4"></circle><circle cx="{{item.mx}}" cy="{{item.my}}" r="16" fill="none" stroke="#7CF0C4" stroke-opacity="0.45"></circle></svg>
@@ -2403,70 +2488,94 @@ class Component extends DCLogic {
   }
   renderVals() {
     const domains = [
-      { id: 'all', label: 'All' },
-      { id: 'research', label: 'Research', blurb: 'Build the map. Systems that read a century of research and every patient result, and show which directions are worth testing.' },
-      { id: 'decide', label: 'Command & Control', blurb: 'Orient and recommend the route to take. Systems and people that suggest, for each person, what to measure and what to do next.' },
-      { id: 'capabilities', label: 'Capabilities', blurb: 'See and act. Sensors, operators and treatments, deployed around each person to track where they are and move them toward NED.' },
-      { id: 'centers', label: 'Centers', blurb: 'The bases where all of this happens, close to the people who need it.' }
+      { id: 'all', label: 'All', short: 'All' },
+      { id: 'map', label: 'Knowledge map', short: 'Map', subs: ['evidence', 'theory', 'frontier'], blurb: 'All people, over years. What has been seen, why it works, and what is not known yet.' },
+      { id: 'nav', label: 'Clinical navigation', short: 'Navigation', subs: ['measure', 'decide', 'deliver'], blurb: 'One person, day by day. Measure where they are, analyze what it means, and improve their state.' }
     ];
+    const subs = {
+      evidence: { label: 'Evidence', blurb: 'What has been seen: a century of research, results from other centers, and every patient result.' },
+      theory: { label: 'Theory', blurb: 'Why it works: the model of the body, and the people who judge each option.' },
+      frontier: { label: 'Frontier', blurb: 'What is not known yet: new treatments, new measurements and open problems.' },
+      measure: { label: 'Measure', blurb: 'Where each person is, read often enough to see every change.' },
+      decide: { label: 'Analyze', blurb: 'Systems and people that read every result and choose the next step for each person.' },
+      deliver: { label: 'Deliver', blurb: 'Teams, treatments and centers that move each person toward NED, at home and in the clinic.' }
+    };
     const P = [
-      { code: 'R-01', d: 'research', name: 'Altneubio', s: 'building', v: 'grid', line: 'The atlas of a century of cancer research, built jointly by super intelligence and a multidisciplinary team of doctors, researchers and engineers.' },
-      { code: 'R-02', d: 'research', name: 'Measurement platform', s: 'building', v: 'bars', line: 'The system that decides what to measure for each person, how often, and with which tools.' },
-      { code: 'R-03', d: 'research', name: 'Therapeutic Module System', s: 'building', v: 'modules', line: 'New treatment modules, drawn from the atlas and ready to test.' },
-      { code: 'R-04', d: 'research', name: 'Recurrence Response System', s: 'building', v: 'ready', line: 'Develops and tests the treatments to use if cancer comes back, before it does.' },
-      { code: 'R-05', d: 'research', name: 'Recurrence Prevention System', s: 'building', v: 'shield', line: 'Develops and tests treatments that lower the chance that cancer comes back at all.' },
-      { code: 'R-06', d: 'research', name: 'Ground Truth', s: 'building', v: 'stack', line: 'Every measurement, decision and result from every person, kept as one empirical record and fed back into the map.' },
-      { code: 'R-07', d: 'research', name: 'Intel Network', s: 'next', v: 'signal', line: 'Results from other hospitals, clinical trials and registries, brought into the map.' },
-      { code: 'R-08', d: 'research', name: 'Expert Council', s: 'live', v: 'people', line: 'Top clinicians, researchers and engineers, with Nobel laureates among them, who guide the map and the research.' },
-      { code: 'R-09', d: 'research', name: 'NED Grand Challenges', s: 'next', v: 'rings', line: 'Publish the hardest problems on the route to NED, each with a clear test and prize money. Any team in the world can compete. The first team to pass the test wins.' },
-      { code: 'D-01', d: 'decide', name: '360 baseline orientation', s: 'building', v: 'radial', line: 'A full first picture of each person, to know where they stand.' },
-      { code: 'D-02', d: 'decide', name: 'Therapeutic navigator', s: 'building', v: 'navigator', line: 'Long-term decisions: which modules, and in which order.' },
-      { code: 'D-03', d: 'decide', name: 'Therapeutic optimizer', s: 'building', v: 'optimizer', line: 'Short-term decisions inside each module: dose, timing, next step.' },
-      { code: 'D-04', d: 'decide', name: 'Safety tripwires', s: 'building', v: 'tripwire', line: 'Early warnings that stop or change a treatment before it does harm.' },
-      { code: 'D-05', d: 'decide', name: 'NED Operations Center', s: 'live', v: 'hq', line: 'One headquarters that sees every patient and every decision.' },
-      { code: 'D-06', d: 'decide', name: 'Red Team', s: 'next', v: 'tripwire', line: 'An independent team that audits everything being done: the data, the decisions and the care.' },
-      { code: 'C-01', d: 'capabilities', name: 'A-Team', s: 'live', v: 'people', line: 'Special operations teams capable of running complex clinical trials and personalized programs.' },
-      { code: 'C-02', d: 'capabilities', name: '360 baseline', s: 'building', v: 'rings', line: 'Every test needed for the first full picture, done in days.' },
-      { code: 'C-03', d: 'capabilities', name: 'Nyquist', s: 'live', v: 'pulse', line: 'High-frequency measurement, from scans to body signals, each at its own sampling cadence, fast enough to see every change.' },
-      { code: 'C-04', d: 'capabilities', name: 'Sentinel', s: 'live', v: 'signal', line: 'Continuous monitoring through the days between visits to the measurement center, which make up most of a patient’s life.' },
-      { code: 'C-05', d: 'capabilities', name: 'Therapeutic modules', s: 'building', v: 'stack', line: 'Treatments ready to run, alone or together.' },
-      { code: 'C-06', d: 'capabilities', name: 'Next Line', s: 'building', v: 'nextline', line: 'The next treatment, ready before the current one stops working.' },
-      { code: 'C-07', d: 'capabilities', name: 'Recurrence Arsenal', s: 'next', v: 'standby', line: 'Tested treatments on the shelf for each person, ready to launch the same week the first signs of return appear.' },
-      { code: 'C-08', d: 'capabilities', name: 'Recurrence prevention', s: 'next', v: 'loop', line: 'Ongoing care that keeps each person at NED.' },
-      { code: 'C-09', d: 'capabilities', name: 'Virtual clinics', s: 'next', v: 'video', line: 'Expert care from anywhere, over video and shared data.' },
-      { code: 'C-10', d: 'capabilities', name: 'Concierge to the home', s: 'next', v: 'home', line: 'Tests and care brought to the patient’s home.' },
-      { code: 'C-11', d: 'capabilities', name: 'Recon', s: 'building', v: 'radial', line: 'A personal research lab for each person’s cancer, with cell lines, tissue cultures, mitochondrial studies and more, to learn how to target it.' },
-      { code: 'C-12', d: 'capabilities', name: 'Molecular Watch', s: 'next', v: 'pulse', line: 'Blood tests that look for cancer at the molecular level after treatment, months before a scan can show it.' },
-      { code: 'C-13', d: 'capabilities', name: 'Early Warning', s: 'next', v: 'radial', line: 'Screening and surveillance for healthy people and people at high risk, built on what the evidence already proves.' },
-      { code: 'C-14', d: 'capabilities', name: 'Cure One', s: 'live', v: 'focus', line: 'A tailored n-of-1 treatment plan. Every available resource goes to one person, until NED.' },
-      { code: 'L-01', d: 'centers', name: 'Center for Cancer Measurement · IL', s: 'building', v: 'map', line: 'The first center, inside a partner public hospital.' },
-      { code: 'L-02', d: 'centers', name: 'Center for Cancer Measurement · US', s: 'next', v: 'map', line: 'At a partner cancer center. Its many clinical trials give the map more results, faster.' },
-      { code: 'L-03', d: 'centers', name: 'Center for Cancer Measurement · EU', s: 'next', v: 'map', line: 'At a partner research institute in Europe, to give access to the people of the continent.' },
-      { code: 'L-04', d: 'centers', name: 'Center for Cancer Measurement · Gulf', s: 'next', v: 'map', line: 'At a partner cancer center. Patients with different genes show if the map works for everyone.' },
-      { code: 'L-05', d: 'centers', name: 'Center for Cancer Measurement · Next', s: 'next', v: 'open', line: 'Learning compounded across the globe, continuously improving care with every patient.' }
+      { code: 'E-01', d: 'evidence', sub: 'Evidence', name: 'Altneubio', s: 'building', v: 'grid', line: 'The atlas of a century of cancer research, built jointly by super intelligence and a multidisciplinary team of doctors, researchers and engineers.' },
+      { code: 'E-02', d: 'evidence', sub: 'Evidence', name: 'Ground Truth', s: 'building', v: 'stack', line: 'Every measurement, decision and result from every person, kept as one empirical record and fed back into the map.' },
+      { code: 'E-03', d: 'evidence', sub: 'Evidence', name: 'Intel Network', s: 'next', v: 'signal', line: 'Results from other hospitals, clinical trials and registries, brought into the map.' },
+      { code: 'T-01', d: 'theory', sub: 'Theory', name: 'Expert Council', s: 'live', v: 'people', line: 'Top clinicians, researchers and engineers, with Nobel laureates among them, who guide the map and the research.' },
+      { code: 'T-02', d: 'theory', sub: 'Theory', name: 'Negentropy Driver', s: 'building', v: 'loop', line: 'The theory of the body as a control system: what each input does, and how the body repairs itself.' },
+      { code: 'F-01', d: 'frontier', sub: 'Frontier', name: 'Therapeutic Module System', s: 'building', v: 'modules', line: 'New treatment modules, drawn from the atlas and ready to test.' },
+      { code: 'F-02', d: 'frontier', sub: 'Frontier', name: 'Recurrence Response System', s: 'building', v: 'ready', line: 'Develops and tests the treatments to use if cancer comes back, before it does.' },
+      { code: 'F-03', d: 'frontier', sub: 'Frontier', name: 'Recurrence Prevention System', s: 'building', v: 'shield', line: 'Develops and tests treatments that lower the chance that cancer comes back at all.' },
+      { code: 'F-04', d: 'frontier', sub: 'Frontier', name: 'Measurement research', s: 'building', v: 'bars', line: 'Which signals matter, and new instruments to read them. Each new measurement adds a layer to the map.' },
+      { code: 'F-05', d: 'frontier', sub: 'Frontier', name: 'NED Grand Challenges', s: 'next', v: 'rings', line: 'Publish the hardest problems on the route to NED, each with a clear test and prize money. Any team in the world can compete. The first team to pass the test wins.' },
+      { code: 'M-01', d: 'measure', name: 'Nyquist', s: 'live', v: 'pulse', line: 'High-frequency measurement, from scans to body signals, each at its own sampling cadence, fast enough to see every change.' },
+      { code: 'M-02', d: 'measure', name: 'Sentinel', s: 'live', v: 'signal', line: 'Continuous monitoring through the days between visits to the measurement center, which make up most of a patient’s life.' },
+      { code: 'M-03', d: 'measure', name: 'Patient dashboard', s: 'live', v: 'signal', line: 'Each person sees where they are, their trend, and their route for the next 12 to 24 months.' },
+      { code: 'M-04', d: 'measure', name: 'Measurement platform', s: 'building', v: 'bars', line: 'The system that decides what to measure for each person, how often, and with which tools.' },
+      { code: 'M-05', d: 'measure', name: '360 baseline', s: 'building', v: 'rings', line: 'Every test needed for the first full picture, done in days.' },
+      { code: 'M-06', d: 'measure', name: 'Recon', s: 'building', v: 'radial', line: 'A personal research lab for each person’s cancer, with cell lines, tissue cultures, mitochondrial studies and more, to learn how to target it.' },
+      { code: 'M-07', d: 'measure', name: 'Molecular Watch', s: 'next', v: 'pulse', line: 'Blood tests that look for cancer at the molecular level after treatment, months before a scan can show it.' },
+      { code: 'M-08', d: 'measure', name: 'Early Warning', s: 'next', v: 'radial', line: 'Screening and surveillance for healthy people and people at high risk, built on what the evidence already proves.' },
+      { code: 'A-01', d: 'decide', name: 'NED Operations Center', s: 'live', v: 'hq', line: 'One headquarters that sees every patient and every decision.' },
+      { code: 'A-02', d: 'decide', name: '360 baseline orientation', s: 'building', v: 'radial', line: 'A full first picture of each person, to know where they stand.' },
+      { code: 'A-03', d: 'decide', name: 'Therapeutic navigator', s: 'building', v: 'navigator', line: 'Long-term decisions: which modules, and in which order.' },
+      { code: 'A-04', d: 'decide', name: 'Therapeutic optimizer', s: 'building', v: 'optimizer', line: 'Short-term decisions inside each module: dose, timing, next step.' },
+      { code: 'A-05', d: 'decide', name: 'Safety tripwires', s: 'building', v: 'tripwire', line: 'Early warnings that stop or change a treatment before it does harm.' },
+      { code: 'A-06', d: 'decide', name: 'Red Team', s: 'next', v: 'tripwire', line: 'An independent team that audits everything being done: the data, the decisions and the care.' },
+      { code: 'D-01', d: 'deliver', name: 'A-Team', s: 'live', v: 'people', line: 'Special operations teams capable of running complex clinical trials and personalized programs.' },
+      { code: 'D-02', d: 'deliver', name: 'Cure One', s: 'live', v: 'focus', line: 'A tailored n-of-1 treatment plan. Every available resource goes to one person, until NED.' },
+      { code: 'D-03', d: 'deliver', name: 'Therapeutic modules', s: 'building', v: 'stack', line: 'Treatments ready to run, alone or together.' },
+      { code: 'D-04', d: 'deliver', name: 'Next Line', s: 'building', v: 'nextline', line: 'The next treatment, ready before the current one stops working.' },
+      { code: 'D-05', d: 'deliver', name: 'Center for Cancer Measurement · IL', s: 'building', v: 'map', line: 'The first center, inside a partner public hospital.' },
+      { code: 'D-06', d: 'deliver', name: 'Recurrence Arsenal', s: 'next', v: 'standby', line: 'Tested treatments on the shelf for each person, ready to launch the same week the first signs of return appear.' },
+      { code: 'D-07', d: 'deliver', name: 'Recurrence prevention', s: 'next', v: 'loop', line: 'Ongoing care that keeps each person at NED.' },
+      { code: 'D-08', d: 'deliver', name: 'Virtual clinics', s: 'next', v: 'video', line: 'Expert care from anywhere, over video and shared data.' },
+      { code: 'D-09', d: 'deliver', name: 'Concierge to the home', s: 'next', v: 'home', line: 'Tests and care brought to the patient’s home.' },
+      { code: 'D-10', d: 'deliver', name: 'Access and supply', s: 'next', v: 'open', line: 'Partners, suppliers and research that keep lowering the cost per patient, to make the route to NED accessible to every person.' },
+      { code: 'D-11', d: 'deliver', name: 'Center for Cancer Measurement · Worldwide', s: 'next', v: 'world', line: 'Learning compounded across the globe, continuously improving care with every patient.' }
     ];
-    const cur = (this.state && this.state.domain) || 'all';
+    const grp = (this.state && this.state.domain) || 'all';
+    const off = (this.state && this.state.off) || {};
+    const G = domains.find((x) => x.id === grp) || domains[0];
     const labelOf = {};
-    domains.forEach((x) => { labelOf[x.id] = x.label; });
+    Object.keys(subs).forEach((k) => { labelOf[k] = subs[k].label; });
     const st = (this.state && this.state.status) || '';
     const okS = (p) => !st || p.s === st;
-    const okD = (p) => cur === 'all' || p.d === cur;
+    const inG = (g, p) => g.id === 'all' || g.subs.indexOf(p.d) >= 0;
+    const okD = (p) => inG(G, p) && !off[p.d];
     const pickS = (v) => (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ status: st === v ? '' : v }); };
     const tabs = domains.map((x) => {
-      const n = P.filter((p) => (x.id === 'all' || p.d === x.id) && okS(p)).length;
-      return { label: x.label, count: n, sel: x.id === cur ? 'true' : 'false', pick: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ domain: x.id }); } };
+      const n = P.filter((p) => inG(x, p) && okS(p)).length;
+      return { label: x.label, short: x.short, count: n, sel: x.id === grp ? 'true' : 'false', pick: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ domain: x.id, off: {} }); } };
     });
-    const items = P.filter((p) => okD(p) && okS(p)).map((p) => ({
-      code: p.code, name: p.name, line: p.line, domainLabel: labelOf[p.d],
-      isLive: p.s === 'live', isBuilding: p.s === 'building', isNext: p.s === 'next',
-      v_grid: p.v === 'grid', v_pulse: p.v === 'pulse', v_people: p.v === 'people', v_loop: p.v === 'loop', v_open: p.v === 'open', v_rings: p.v === 'rings', v_bars: p.v === 'bars', v_modules: p.v === 'modules', v_ready: p.v === 'ready', v_shield: p.v === 'shield', v_radial: p.v === 'radial', v_navigator: p.v === 'navigator', v_optimizer: p.v === 'optimizer', v_tripwire: p.v === 'tripwire', v_hq: p.v === 'hq', v_signal: p.v === 'signal', v_stack: p.v === 'stack', v_nextline: p.v === 'nextline', v_standby: p.v === 'standby', v_video: p.v === 'video', v_home: p.v === 'home', v_map: p.v === 'map', v_focus: p.v === 'focus', mx: ({'L-01':268,'L-02':96,'L-03':186,'L-04':236})[p.code] || 200, my: ({'L-01':126,'L-02':112,'L-03':84,'L-04':104})[p.code] || 110
+    const subtabs = G.id === 'all' ? [] : G.subs.map((k) => ({
+      label: subs[k].label,
+      count: P.filter((p) => p.d === k && okS(p)).length,
+      sel: off[k] ? 'false' : 'true',
+      pick: (e) => {
+        if (e && e.preventDefault) e.preventDefault();
+        const on = G.subs.filter((q) => !off[q]).length;
+        if (!off[k] && on === 1) return;
+        const next = Object.assign({}, off); next[k] = !off[k];
+        this.setState({ off: next });
+      }
     }));
-    const dom = domains.find((x) => x.id === cur);
+    const items = P.filter((p) => okD(p) && okS(p)).map((p) => ({
+      code: p.code, name: p.name, line: p.line, domainLabel: (p.sub ? 'Knowledge map · ' : 'Clinical navigation · ') + labelOf[p.d],
+      isLive: p.s === 'live', isBuilding: p.s === 'building', isNext: p.s === 'next',
+      v_grid: p.v === 'grid', v_pulse: p.v === 'pulse', v_people: p.v === 'people', v_loop: p.v === 'loop', v_open: p.v === 'open', v_rings: p.v === 'rings', v_bars: p.v === 'bars', v_modules: p.v === 'modules', v_ready: p.v === 'ready', v_shield: p.v === 'shield', v_radial: p.v === 'radial', v_navigator: p.v === 'navigator', v_optimizer: p.v === 'optimizer', v_tripwire: p.v === 'tripwire', v_hq: p.v === 'hq', v_signal: p.v === 'signal', v_stack: p.v === 'stack', v_nextline: p.v === 'nextline', v_standby: p.v === 'standby', v_video: p.v === 'video', v_home: p.v === 'home', v_map: p.v === 'map', v_world: p.v === 'world', v_focus: p.v === 'focus', mx: ({'D-05':268})[p.code] || 200, my: ({'D-05':126})[p.code] || 110
+    }));
+    const blurb = '';
     return {
       tabs: tabs,
+      subtabs: subtabs,
+      showSub: G.id !== 'all',
       items: items,
-      showBlurb: !!(dom && dom.blurb),
-      domainBlurb: dom && dom.blurb ? dom.blurb : '',
+      showBlurb: false,
+      domainBlurb: blurb,
       countLive: P.filter((p) => okD(p) && p.s === 'live').length,
       countBuilding: P.filter((p) => okD(p) && p.s === 'building').length,
       countNext: P.filter((p) => okD(p) && p.s === 'next').length,
