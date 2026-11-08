@@ -2557,9 +2557,10 @@ class Component extends DCLogic {
       sel: off[k] ? 'false' : 'true',
       pick: (e) => {
         if (e && e.preventDefault) e.preventDefault();
-        const on = G.subs.filter((q) => !off[q]).length;
-        if (!off[k] && on === 1) return;
-        const next = Object.assign({}, off); next[k] = !off[k];
+        const allOn = G.subs.every((q) => !off[q]);
+        let next = {};
+        if (allOn) { G.subs.forEach((q) => { if (q !== k) next[q] = true; }); }
+        else { next = Object.assign({}, off); next[k] = !off[k]; if (G.subs.every((q) => next[q])) next = {}; }
         this.setState({ off: next });
       }
     }));
